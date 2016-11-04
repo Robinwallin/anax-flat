@@ -1,0 +1,2806 @@
+ less-lint           - Linting LESS/CSS stylesheet.
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ atom .
+
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ls
+composer.json  composer.lock  Makefile  vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ^C
+Display all 597 possibilities? (y or n)
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ n
+
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ls -l
+total 25
+-rwxrwxrwx+ 1 Robin None    59 Oct 31 14:58 composer.json
+-rwxrwxrwx+ 1 Robin None 16360 Oct 31 14:59 composer.lock
+-rwxrwxrwx+ 1 Robin None  2780 Oct 31 15:01 Makefile
+drwxrwxrwx+ 1Robin None     0 Oct 31 14:59 vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ atom Makefile
+
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat$ lscomposer.json  composer.lock  Makefile  vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ make site-build
+---> Copy default structure from Anax Flat.
+Copy from anax-flat
+rsync -a vendor/mos/anax-flat/htdocs/ htdocs/
+rsync -a vendor/mos/anax-flat/config/ config/
+rsync -a vendor/mos/anax-flat/content/ content/
+rsync -a vendor/mos/anax-flat/view/ view/
+Copy from CImage
+install -d htdocs/cimage
+rsync -a vendor/mos/cimage/webroot/imgd.php htdocs/cimage/imgd.php
+rsync -a vendor/mos/cimage/icc/ htdocs/cimage/icc/
+Create the directory for the cache items
+install --directory --mode 777 cache/cimage cache/anax
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ls
+cache          composer.lock  content  Makefile  view
+composer.json  ig         htdocs   vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ls
+cache          composer.lock  content  Makefile  view
+composer.json  config         htdocs   vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ cd ..
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ ls
+anax-flat  kmom01  kmom02  kmom03  kmom04  kmom05  kmom06  kmom10
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+./
+Makefile
+composere/
+cache/anax/
+cache/cimage/
+config/
+config/cache.php
+config/navbar.php
+config/theme.php
+config/url.php
+config/routes/
+config/routes/custom.php
+content/
+content/.meta.md
+content/about.md
+content/contact.md
+content/cookies.md
+content/index.md
+content/license.md
+content/markdown.md
+content/block/
+content/block/footer-col-1.md
+content/block/footer-col-2.md
+content/block/footer-col-3.md
+content/block/footer.md
+content/example/
+content/example/markdown.md
+content/report/
+content/report/.meta.md
+content/report/000_index.md
+content/report/100_intro.md
+content/report/110_kmom01.md
+content/report/120_kmom02.md
+content/report/130_kmom03.md
+content/report/140_kmom04.md
+content/report/150_kmom05.md
+content/report/160_kmom06.md
+content/report/170_kmom10.md
+htdocs/
+htdocs/favicon.ico
+htdocs/index.php
+htdocs/cimage/
+htdocs/cimage/imgd.php
+htdocs/cimage/icc/
+htdocs/cimage/icc/sRGB_IEC61966-2-1_black_scaled.icc
+htdocs/css/
+htdocs/css/default.min.css
+htdocs/img/
+htdocs/img/anax.png
+htdocs/img/dbwebbisar.jpg
+htdocs/img/favicon/
+htdocs/img/favicon/favicon.svg
+htdocs/img/favicon/favicon_128x128.png
+htdocs/img/favicon/favicon_256x256.png
+htdocs/img/favicon/favicon_40x40.png
+htdocs/js/
+vendor/
+vendor/autoload.php
+vendor/composer/
+vendor/composer/ClassLoader.php
+vendor/composer/autoload_classmap.php
+vendor/composer/autoload_files.php
+vendor/composer/autoload_namespaces.php
+vendor/composer/autoload_psr4.php
+vendor/composer/autoload_real.php
+vendor/composer/autoload_static.php
+vendor/composer/installed.json
+vendor/ezyang/vendor/ezyang/htmlpurifier/vendor/ezyang/htmlpurifier/CREDITSvendor/ezyang/htmlpurifier/INSTALL
+vendor/ezyang/htmlpurifier/INSTALL.fr.utf8
+vendor/ezyang/htmlpurifier/NEWS
+vendor/ezyang/htmlpurifier/TODO
+vendor/ezyang/htmlpurifier/VERSION
+vendor/ezyang/htmlpurifier/WHATSNEW
+vendor/ezyang/htmlpurifier/WYSIWYG
+vendor/ezyang/htmlpurifier/composer.json
+vendor/ezyang/htmlpurifier/package.php
+vendor/ezyang/htmlpurifier/phpdoc.ini
+vendor/ezyang/htmlpurifier/release1-update.php
+vendor/ezyang/htmlpurifier/release2-tag.php
+vendor/ezyang/htmlpurifier/test-settings.sample.php
+vendor/ezyang/htmlpurifier/extras/
+vendor/ezyang/htmlpurifier/extras/FSTools.php
+vendor/ezyang/htmlpurifier/extras/HTMLPurifierExtras.auto.php
+vendor/ezyang/htmlpurifier/extras/HTMLPurifierExtras.autoload.php
+vendor/ezyang/htmlpurifier/extras/HTMLPurifierExtras.php
+vendor/ezyang/htmlpurifier/extras/README
+vendor/ezyang/htmlpurifier/extras/ConfigDoc/
+vendor/ezyang/htmlpurifier/extras/ConfigDoc/HTMLXSLTProcessor.php
+vendor/ezyang/htmlpurifier/extras/FSTools/
+vendor/ezyang/htmlpurifier/extras/FSTools/File.php
+vendor/ezyang/htmlpurifier/library/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.auto.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.autoload.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.composer.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.func.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.includes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.kses.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.path.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier.safe-includes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Arborize.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrCollections.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTypes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrValidator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Bootstrap.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/CSSDefinition.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Config.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ContentSets.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Context.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Definition.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCacheFactory.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Doctype.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DoctypeRegistry.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ElementDef.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Encoder.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/EntityLookup.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/EntityParser.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ErrorCollector.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ErrorStruct.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Exception.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Filter.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Generator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLDefinition.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModuleManager.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/IDAccumulator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/LanguageFactory.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Length.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Lexer.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Node.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/PercentEncoder.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Printer.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/PropertyList.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/PropertyListIterator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Queue.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/StringHash.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/StringHashParser.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/TagTransform.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/TokenFactory.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/URI.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/URIDefinition.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/URIParser.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/URISchemeRegistry.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/UnitConverter.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/VarParser.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/VarParserException.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Zipper.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/Clone.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/Enum.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/Integer.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/Lang.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/Switch.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/Text.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/AlphaValue.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Background.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/BackgroundPosition.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Border.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Color.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Composite.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/DenyElementDecorator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Filter.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Font.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/FontFamily.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Ident.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/ImportantDecorator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Length.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/ListStyle.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Multiple.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Number.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/Percentage.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/TextDecoration.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/CSS/URI.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Bool.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Class.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Color.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/FrameTarget.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/ID.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Length.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/LinkTypes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/MultiLength.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Nmtokens.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/HTML/Pixels.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI/vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI/Email.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI/Host.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI/IPv4.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI/IPv6.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI/Email/vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrDef/URI/Email/SimpleCheck.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Background.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/BdoDir.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/BgColor.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/BoolToCSS.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Border.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/EnumToCSS.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/ImgRequired.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/ImgSpace.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Input.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Lang.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Length.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Name.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/NameSync.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Nofollow.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/SafeEmbed.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/SafeObject.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/SafeParam.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/ScriptRequired.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/TargetBlank.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/TargetNoreferrer.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/AttrTransform/Textarea.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/Chameleon.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/Custom.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/Empty.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/List.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/Optional.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/Required.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/StrictBlockquote.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ChildDef/Table.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Exception.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Interchange.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/InterchangeBuilder.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Validator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/ValidatorAtom.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema.ser
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Builder/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Builder/ConfigSchema.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Builder/Xml.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Interchange/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Interchange/Directive.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Interchange/Id.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.AllowedClasses.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.AllowedFrameTargets.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.AllowedRel.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.AllowedRev.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.ClassUseCDATA.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.DefaultImageAlt.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.DefaultInvalidImage.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.DefaultInvalidImageAlt.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.DefaultTextDir.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.EnableID.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.ForbiddenClasses.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.ID.HTML5.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.IDBlacklist.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.IDBlacklistRegexp.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.IDPrefix.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Attr.IDPrefixLocal.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.AutoParagraph.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.Custom.txtvendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.DisplayLinkURI.txtvendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.Linkify.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.PurifierLinkify.DocURL.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.PurifierLinkify.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.RemoveEmpty.Predicate.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.RemoveEmpty.RemoveNbsp.Exceptions.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.RemoveEmpty.RemoveNbsp.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.RemoveEmpty.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/AutoFormat.RemoveSpansWithoutAttributes.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.AllowDuplicates.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.AllowImportant.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.AllowTricky.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.AllowedFonts.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.AllowedProperties.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.DefinitionRev.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.ForbiddenProperties.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.MaxImgLength.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.Proprietary.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/CSS.Trusted.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Cache.DefinitionImpl.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Cache.SerializerPath.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Cache.SerializerPermissions.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.AggressivelyFixLt.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.AllowHostnameUnderscore.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.CollectErrors.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.ColorKeywords.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.ConvertDocumentToFragment.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.DirectLexLineNumberSyncInterval.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.DisableExcludes.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.EnableIDNA.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.Encoding.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.EscapeInvalidChildren.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.EscapeInvalidTags.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.EscapeNonASCIICharacters.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.HiddenElements.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.Language.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.LexerImpl.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.MaintainLineNumbers.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.NormalizeNewlines.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.RemoveInvalidImg.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.RemoveProcessingInstructions.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Core.RemoveScriptContents.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Filter.Custom.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Filter.ExtractStyleBlocks.Escaping.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Filter.ExtractStyleBlocks.Scope.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Filter.ExtractStyleBlocks.TidyImpl.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Filter.ExtractStyleBlocks.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Filter.YouTube.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Allowed.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.AllowedAttributes.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.AllowedComments.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.AllowedCommentsRegexp.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.AllowedElements.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.AllowedModules.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Attr.Name.UseCDATA.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.BlockWrapper.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.CoreModules.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.CustomDoctype.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.DefinitionID.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.DefinitionRev.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Doctype.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.FlashAllowFullScreen.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.ForbiddenAttributes.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.ForbiddenElements.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.MaxImgLength.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Nofollow.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Parent.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Proprietary.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.SafeEmbed.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.SafeIframe.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.SafeObject.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.SafeScripting.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Strict.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.TargetBlank.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.TargetNoreferrer.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.TidyAdd.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.TidyLevel.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.TidyRemove.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.Trusted.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/HTML.XHTML.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Output.FixInnerHTML.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Output.FlashCompat.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Output.Newline.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Output.SortAttr.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Output.TidyFormat.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/Test.ForceNoIconv.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.AllowedSchemes.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.Base.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.DefaultScheme.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.DefinitionID.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.DefinitionRev.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.Disable.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.DisableExternal.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.DisableExternalResources.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.DisableResources.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.Host.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.HostBlacklist.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.MakeAbsolute.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.Munge.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.MungeResources.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.MungeSecretKey.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.OverrideAllowedSchemes.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/URI.SafeIframeRegexp.txt
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/schema/info.ini
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Decorator.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Null.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Decorator/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Decorator/Cleanup.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Decorator/Memory.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Decorator/Template.php.in
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer/README
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/EntityLookup/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/EntityLookup/entities.ser
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Filter/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Filter/ExtractStyleBlocks.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Filter/YouTube.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Bdo.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/CommonAttributes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Edit.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Forms.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Hypertext.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Iframe.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Image.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Legacy.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/List.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Name.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Nofollow.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/NonXMLCommonAttributes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Object.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Presentation.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Proprietary.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Ruby.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/SafeEmbed.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/SafeObject.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/SafeScripting.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Scripting.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/StyleAttribute.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tables.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Target.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/TargetBlank.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/TargetNoreferrer.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Text.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/XMLCommonAttributes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy/Name.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy/Proprietary.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy/Strict.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy/Transitional.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy/XHTML.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy/XHTMLAndHTML4.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/AutoParagraph.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/DisplayLinkURI.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/Linkify.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/PurifierLinkify.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/RemoveEmpty.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/RemoveSpansWithoutAttributes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Injector/SafeObject.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language/classes/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language/classes/en-x-test.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language/messages/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language/messages/en-x-test.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language/messages/en-x-testmini.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Language/messages/en.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Lexer/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Lexer/DOMLex.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Lexer/DirectLex.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Lexer/PH5P.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Node/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Node/Comment.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Node/Element.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Node/Text.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Printer/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Printer/CSSDefinition.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.css
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.js
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Printer/ConfigForm.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Printer/HTMLDefinition.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy/Composite.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy/Core.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy/FixNesting.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy/MakeWellFormed.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy/RemoveForeignElements.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Strategy/ValidateAttributes.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/TagTransform/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/TagTransform/Font.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/TagTransform/Simple.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token/
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token/Comment.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token/Empty.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token/End.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token/Start.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token/Tag.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/Token/Text.php
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/vendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/DisableExternal.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/DisableExternalResources.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/DisableResources.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/HostBlacklist.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/MakeAbsolute.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/Munge.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIFilter/SafeIframe.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/vendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/data.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/file.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/ftp.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/http.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/https.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/mailto.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/news.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/nntp.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/URIScheme/tel.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/VarParser/vendor/ezyang/htmlpurifier/library/HTMLPurifier/VarParser/Flexible.phpvendor/ezyang/htmlpurifier/library/HTMLPurifier/VarParser/Native.phpvendor/ezyang/htmlpurifier/maintenance/vendor/ezyang/htmlpurifier/maintenance/.htaccessvendor/ezyang/htmlpurifier/maintenance/PH5P.patch
+vendor/ezyang/htmlpurifier/maintenance/PH5P.php
+vendor/ezyang/htmlpurifier/maintenance/add-vimline.php
+vendor/ezyang/htmlpurifier/maintenance/common.php
+vendor/ezyang/htmlpurifier/maintenance/compile-doxygen.sh
+vendor/ezyang/htmlpurifier/maintenance/config-scanner.php
+vendor/ezyang/htmlpurifier/maintenance/flush-definition-cache.php
+vendor/ezyang/htmlpurifier/maintenance/flush.php
+vendor/ezyang/htmlpurifier/maintenance/generate-entity-file.php
+vendor/ezyang/htmlpurifier/maintenance/generate-includes.php
+vendor/ezyang/htmlpurifier/maintenance/generate-ph5p-patch.php
+vendor/ezyang/htmlpurifier/maintenance/generate-schema-cache.php
+vendor/ezyang/htmlpurifier/maintenance/generate-standalone.php
+vendor/ezyang/htmlpurifier/maintenance/merge-library.php
+vendor/ezyang/htmlpurifier/maintenance/old-extract-schema.php
+vendor/ezyang/htmlpurifier/maintenance/old-remove-require-once.php
+vendor/ezyang/htmlpurifier/maintenance/old-remove-schema-def.php
+vendor/ezyang/htmlpurifier/maintenance/regenerate-docs.sh
+vendor/ezyang/htmlpurifier/maintenance/remove-trailing-whitespace.php
+vendor/ezyang/htmlpurifier/maintenance/rename-config.php
+vendor/ezyang/htmlpurifier/maintenance/update-config.php
+vendor/ezyang/htmlpurifier/plugins/
+vendor/ezyang/htmlpurifier/plugins/modx.txt
+vendor/ezyang/htmlpurifier/plugins/phorum/
+vendor/ezyang/htmlpurifier/plugins/phorum/Changelog
+vendor/ezyang/htmlpurifier/plugins/phorum/INSTALL
+vendor/ezyang/htmlpurifier/plugins/phorum/README
+vendor/ezyang/htmlpurifier/plugins/phorum/config.default.php
+vendor/ezyang/htmlpurifier/plugins/phorum/htmlpurifier.php
+vendor/ezyang/htmlpurifier/plugins/phorum/info.txt
+vendor/ezyang/htmlpurifier/plugins/phorum/init-config.php
+vendor/ezyang/htmlpurifier/plugins/phorum/migrate.bbcode.php
+vendor/ezyang/htmlpurifier/plugins/phorum/settings.php
+vendor/ezyang/htmlpurifier/plugins/phorum/htmlpurifier/
+vendor/ezyang/htmlpurifier/plugins/phorum/htmlpurifier/README
+vendor/ezyang/htmlpurifier/plugins/phorum/settings/
+vendor/ezyang/htmlpurifier/plugins/phorum/settings/form.php
+vendor/ezyang/htmlpurifier/plugins/phorum/settings/migrate-sigs-form.php
+vendor/ezyang/htmlpurifier/plugins/phorum/settings/migrate-sigs.php
+vendor/ezyang/htmlpurifier/plugins/phorum/settings/save.php
+vendor/ezyang/htmlpurifier/tests/
+vendor/ezyang/htmlpurifier/tests/path2class.func.php
+vendor/michelf/
+vendor/michelf/php-markdown/
+vendor/michelf/php-markdown/License.md
+vendor/michelf/php-markdown/Readme.md
+vendor/michelf/php-markdown/Readme.php
+vendor/michelf/php-markdown/composer.json
+vendor/michelf/php-markdown/Michelf/
+vendor/michelf/php-markdown/Michelf/Markdown.inc.php
+vendor/michelf/php-markdown/Michelf/Markdown.php
+vendor/michelf/php-markdown/Michelf/MarkdownExtra.inc.php
+vendor/michelf/php-markdown/Michelf/MarkdownExtra.php
+vendor/michelf/php-markdown/Michelf/MarkdownInterface.inc.php
+vendor/michelf/php-markdown/Michelf/MarkdownInterface.php
+vendor/michelf/php-smartypants/
+vendor/michelf/php-smartypants/License.md
+vendor/michelf/php-smartypants/Readme.md
+vendor/michelf/php-smartypants/Readme.php
+vendor/michelf/php-smartypants/composer.json
+vendor/michelf/php-smartypants/Michelf/
+vendor/michelf/php-smartypants/Michelf/SmartyPants.inc.php
+vendor/michelf/php-smartypants/Michelf/SmartyPants.php
+vendor/michelf/php-smartypants/Michelf/SmartyPantsTypographer.inc.php
+vendor/michelf/php-smartypants/Michelf/SmartyPantsTypographer.php
+vendor/mos/
+vendor/mos/anax-flat/
+vendor/mos/anax-flat/.phpcs.xml
+vendor/mos/anax-flat/.phpdoc.xml
+vendor/mos/anax-flat/.phpunit.xml
+vendor/mos/anax-flat/.scrutinizer.yml
+vendor/mos/anax-flat/Makefile
+vendor/mos/anax-flat/Makefile-dev
+vendor/mos/anax-flat/REVISION.md
+vendor/mos/anax-flat/composer.json
+vendor/mos/anax-flat/composer.lock
+vendor/mos/anax-flat/config/
+vendor/mos/anax-flat/config/cache.php
+vendor/mos/anax-flat/config/navbar.php
+vendor/mos/anax-flat/config/theme.php
+vendor/mos/anax-flat/config/url.php
+vendor/mos/anax-flat/config/routes/
+vendor/mos/anax-flat/config/routes/custom.php
+vendor/mos/anax-flat/content/
+vendor/mos/anax-flat/content/.meta.md
+vendor/mos/anax-flat/content/about.md
+vendor/mos/anax-flat/content/contact.md
+vendor/mos/anax-flat/content/cookies.md
+vendor/mos/anax-flat/content/index.md
+vendor/mos/anax-flat/content/license.md
+vendor/mos/anax-flat/content/markdown.md
+vendor/mos/anax-flat/content/block/
+vendor/mos/anax-flat/content/block/footer-col-1.md
+vendor/mos/anax-flat/content/block/footer-col-2.md
+vendor/mos/anax-flat/content/block/footer-col-3.md
+vendor/mos/anax-flat/content/block/footer.md
+vendor/mos/anax-flat/content/example/
+vendor/mos/anax-flat/content/example/markdown.md
+vendor/mos/anax-flat/content/report/
+vendor/mos/anax-flat/content/report/.meta.md
+vendor/mos/anax-flat/content/report/000_index.md
+vendor/mos/anax-flat/content/report/100_intro.md
+vendor/mos/anax-flat/content/report/110_kmom01.md
+vendor/mos/anax-flat/content/report/120_kmom02.md
+vendor/mos/anax-flat/content/report/130_kmom03.md
+vendor/mos/anax-flat/content/report/140_kmom04.md
+vendor/mos/anax-flat/content/report/150_kmom05.md
+vendor/mos/anax-flat/content/report/160_kmom06.md
+vendor/mos/anax-flat/content/report/170_kmom10.md
+vendor/mos/anax-flat/htdocs/
+vendor/mos/anax-flat/htdocs/favicon.ico
+vendor/mos/anax-flat/htdocs/index.php
+vendor/mos/anax-flat/htdocs/css/
+vendor/mos/anax-flat/htdocs/css/default.min.css
+vendor/mos/anax-flat/htdocs/img/
+vendor/mos/anax-flat/htdocs/img/anax.png
+vendor/mos/anax-flat/htdocs/img/dbwebbisar.jpg
+vendor/mos/anax-flat/htdocs/img/favicon/
+vendor/mos/anax-flat/htdocs/img/favicon/favicon.svg
+vendor/mos/anax-flat/htdocs/img/favicon/favicon_128x128.png
+vendor/mos/anax-flat/htdocs/img/favicon/favicon_256x256.png
+vendor/mos/anax-flat/htdocs/img/favicon/favicon_40x40.png
+vendor/mos/anax-flat/htdocs/js/
+vendor/mos/anax-flat/view/
+vendor/mos/anax-flat/view/theme-selector/
+vendor/mos/anax-flat/view/theme-selector/index.tpl.php
+vendor/mos/anax/
+vendor/mos/anax/.gitattributes
+vendor/mos/anax/.gitmodules
+vendor/mos/anax/.phpcs.xml
+vendor/mos/anax/.phpdoc.xml
+vendor/mos/anax/.phpmd.xml
+vendor/mos/anax/.phpunit.xml
+vendor/mos/anax/.scrutinizer.yml
+vendor/mos/anax/LICENSE.txt
+vendor/mos/anax/Makefile
+vendor/mos/anax/REVISION.md
+vendor/mos/anax/composer.json
+vendor/mos/anax/app/
+vendor/mos/anax/app/content/
+vendor/mos/anax/app/content/about.md
+vendor/mos/anax/app/content/cookies.md
+vendor/mos/anax/app/content/index.md
+vendor/mos/anax/app/content/license.md
+vendor/mos/anax/app/content/doc/
+vendor/mos/anax/app/content/doc/.meta.md
+vendor/mos/anax/app/content/doc/000_index.md
+vendor/mos/anax/app/content/doc/100_testpage1.md
+vendor/mos/anax/app/content/doc/110_testpage2.md
+vendor/mos/anax/app/content/doc/111_testpage3.md
+vendor/mos/anax/app/content/doc/200_testpage4.md
+vendor/mos/anax/app/content/guide/
+vendor/mos/anax/app/content/guide/0_index.md
+vendor/mos/anax/app/content/guide/1_testpage.md
+vendor/mos/anax/config/
+vendor/mos/anax/config/app.php
+vendor/mos/anax/config/cache.php
+vendor/mos/anax/config/content.php
+vendor/mos/anax/config/error_reporting.php
+vendor/mos/anax/config/file_content.php
+vendor/mos/anax/config/navbar.php
+vendor/mos/anax/config/page_content.php
+vendor/mos/anax/config/session.php
+vendor/mos/anax/config/theme.php
+vendor/mos/anax/config/url.php
+vendor/mos/anax/config/views.php
+vendor/mos/anax/config/routes/
+vendor/mos/anax/config/routes/custom.php
+vendor/mos/anax/config/routes/default.php
+vendor/mos/anax/config/routes/internals.php
+vendor/mos/anax/doc/
+vendor/mos/anax/doc/api/
+vendor/mos/anax/doc/api/.htaccess
+vendor/mos/anax/doc/api/index.html
+vendor/mos/anax/doc/api/classes/
+vendor/mos/anax/doc/api/classes/Anax.Cache.CFileCache.html
+vendor/mos/anax/doc/api/classes/Anax.Content.CFileBasedContent.html
+vendor/mos/anax/doc/api/classes/Anax.Content.CFileContent.html
+vendor/mos/anax/doc/api/classes/Anax.Content.CPageContent.html
+vendor/mos/anax/doc/api/classes/Anax.Content.CTextFilter.html
+vendor/mos/anax/doc/api/classes/Anax.DI.CDI.html
+vendor/mos/anax/doc/api/classes/Anax.DI.CDIArray.html
+vendor/mos/anax/doc/api/classes/Anax.DI.CDIFactoryDefault.html
+vendor/mos/anax/doc/api/classes/Anax.DI.CDIFactoryDocumentation.html
+vendor/mos/anax/doc/api/classes/Anax.DI.CDIFactoryTest.html
+vendor/mos/anax/doc/api/classes/Anax.DI.IDI.html
+vendor/mos/anax/doc/api/classes/Anax.DI.IInjectionAware.html
+vendor/mos/anax/doc/api/classes/Anax.DI.TInjectable.html
+vendor/mos/anax/doc/api/classes/Anax.DI.TInjectionAware.html
+vendor/mos/anax/doc/api/classes/Anax.Exception.ForbiddenException.html
+vendor/mos/anax/doc/api/classes/Anax.Exception.InternalServerErrorException.html
+vendor/mos/anax/doc/api/classes/Anax.Exception.NotFoundException.html
+vendor/mos/anax/doc/api/classes/Anax.Exception.html
+vendor/mos/anax/doc/api/classes/Anax.Flash.CFlashBasic.html
+vendor/mos/anax/doc/api/classes/Anax.HTMLForm.CFormExample.html
+vendor/mos/anax/doc/api/classes/Anax.HTMLForm.FormController.html
+vendor/mos/anax/doc/api/classes/Anax.HTMLForm.FormSmallController.html
+vendor/mos/anax/doc/api/classes/Anax.ISingleton.html
+vendor/mos/anax/doc/api/classes/Anax.Kernel.CAnax.html
+vendor/mos/anax/doc/api/classes/Anax.Kernel.CAnaxSingleton.html
+vendor/mos/anax/doc/api/classes/Anax.Loader.CPsr4Autoloader.html
+vendor/mos/anax/doc/api/classes/Anax.Log.CLogger.html
+vendor/mos/anax/doc/api/classes/Anax.MVC.CApplicationBasic.html
+vendor/mos/anax/doc/api/classes/Anax.MVC.CDispatcherBasic.html
+vendor/mos/anax/doc/api/classes/Anax.MVC.ErrorController.html
+vendor/mos/anax/doc/api/classes/Anax.MVC.TRedirectHelpers.html
+vendor/mos/anax/doc/api/classes/Anax.Navigation.CNavbar.html
+vendor/mos/anax/doc/api/classes/Anax.Request.CRequestBasic.html
+vendor/mos/anax/doc/api/classes/Anax.Response.CResponseBasic.html
+vendor/mos/anax/doc/api/classes/Anax.Route.CRouteBasic.html
+vendor/mos/anax/doc/api/classes/Anax.Route.CRouterBasic.html
+vendor/mos/anax/doc/api/classes/Anax.Session.CSession.html
+vendor/mos/anax/doc/api/classes/Anax.TConfigure.html
+vendor/mos/anax/doc/api/classes/Anax.TSingleton.html
+vendor/mos/anax/doc/api/classes/Anax.ThemeEngine.CThemeBasic.html
+vendor/mos/anax/doc/api/classes/Anax.ThemeEngine.CThemeEngine.html
+vendor/mos/anax/doc/api/classes/Anax.ThemeEngine.IThemeEngine.html
+vendor/mos/anax/doc/api/classes/Anax.Url.CUrl.html
+vendor/mos/anax/doc/api/classes/Anax.Validate.CValidate.html
+vendor/mos/anax/doc/api/classes/Anax.View.CView.html
+vendor/mos/anax/doc/api/classes/Anax.View.CViewBasic.html
+vendor/mos/anax/doc/api/classes/Anax.View.CViewContainer.html
+vendor/mos/anax/doc/api/classes/Anax.View.CViewContainerBasic.html
+vendor/mos/anax/doc/api/classes/Anax.View.Exception.html
+vendor/mos/anax/doc/api/css/
+vendor/mos/anax/doc/api/css/bootstrap-combined.no-icons.min.css
+vendor/mos/anax/doc/api/css/font-awesome.min.css
+vendor/mos/anax/doc/api/css/jquery.iviewer.css
+vendor/mos/anax/doc/api/css/prism.css
+vendor/mos/anax/doc/api/css/template.css
+vendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/
+vendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/Read Me.txt
+vendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/lte-ie7.js
+vendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/style.css
+vendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/fonts/
+vendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.dev.svgvendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.eotvendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.svgvendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.ttfvendor/mos/anax/doc/api/css/phpdocumentor-clean-icons/fonts/phpdocumentor-clean-icons.woffvendor/mos/anax/doc/api/files/vendor/mos/anax/doc/api/files/Cache.CFileCache.htmlvendor/mos/anax/doc/api/files/Content%2FCFileContent.php.txt
+vendor/mos/anax/doc/api/files/Content%2FCTextFilter.php.txt
+vendor/mos/anax/doc/api/files/Content.CFileBasedContent.html
+vendor/mos/anax/doc/api/files/Content.CFileContent.html
+vendor/mos/anax/doc/api/files/Content.CPageContent.html
+vendor/mos/anax/doc/api/files/Content.CTextFilter.html
+vendor/mos/anax/doc/api/files/DI%2FCDI.php.txt
+vendor/mos/anax/doc/api/files/DI%2FCDIArray.php.txt
+vendor/mos/anax/doc/api/files/DI%2FCDIFactoryDefault.php.txt
+vendor/mos/anax/doc/api/files/DI%2FCDIFactoryDocumentation.php.txt
+vendor/mos/anax/doc/api/files/DI%2FCDIFactoryTest.php.txt
+vendor/mos/anax/doc/api/files/DI%2FIDI.php.txt
+vendor/mos/anax/doc/api/files/DI%2FIInjectionAware.php.txt
+vendor/mos/anax/doc/api/files/DI%2FTInjectable.php.txt
+vendor/mos/anax/doc/api/files/DI%2FTInjectionAware.php.txt
+vendor/mos/anax/doc/api/files/DI.CDI.html
+vendor/mos/anax/doc/api/files/DI.CDIArray.html
+vendor/mos/anax/doc/api/files/DI.CDIFactoryDefault.html
+vendor/mos/anax/doc/api/files/DI.CDIFactoryDocumentation.html
+vendor/mos/anax/doc/api/files/DI.CDIFactoryTest.html
+vendor/mos/anax/doc/api/files/DI.IDI.html
+vendor/mos/anax/doc/api/files/DI.IInjectionAware.html
+vendor/mos/anax/doc/api/files/DI.TInjectable.html
+vendor/mos/anax/doc/api/files/DI.TInjectionAware.html
+vendor/mos/anax/doc/api/files/Exception%2FForbiddenException.php.txt
+vendor/mos/anax/doc/api/files/Exception%2FInternalServerErrorException.php.txt
+vendor/mos/anax/doc/api/files/Exception%2FNotFoundException.php.txt
+vendor/mos/anax/doc/api/files/Exception.ForbiddenException.html
+vendor/mos/anax/doc/api/files/Exception.InternalServerErrorException.html
+vendor/mos/anax/doc/api/files/Exception.NotFoundException.html
+vendor/mos/anax/doc/api/files/Exception.html
+vendor/mos/anax/doc/api/files/Exception.php.txt
+vendor/mos/anax/doc/api/files/Flash%2FCFlashBasic.php.txt
+vendor/mos/anax/doc/api/files/Flash.CFlashBasic.html
+vendor/mos/anax/doc/api/files/HTMLForm%2FCFormExample.php.txt
+vendor/mos/anax/doc/api/files/HTMLForm%2FFormController.php.txt
+vendor/mos/anax/doc/api/files/HTMLForm%2FFormSmallController.php.txt
+vendor/mos/anax/doc/api/files/HTMLForm.CFormExample.html
+vendor/mos/anax/doc/api/files/HTMLForm.FormController.html
+vendor/mos/anax/doc/api/files/HTMLForm.FormSmallController.html
+vendor/mos/anax/doc/api/files/ISingleton.html
+vendor/mos/anax/doc/api/files/ISingleton.php.txt
+vendor/mos/anax/doc/api/files/Kernel%2FCAnax.php.txt
+vendor/mos/anax/doc/api/files/Kernel%2FCAnaxSingleton.php.txt
+vendor/mos/anax/doc/api/files/Kernel.CAnax.html
+vendor/mos/anax/doc/api/files/Kernel.CAnaxSingleton.html
+vendor/mos/anax/doc/api/files/Loader%2FCPsr4Autoloader.php.txt
+vendor/mos/anax/doc/api/files/Loader.CPsr4Autoloader.html
+vendor/mos/anax/doc/api/files/Log%2FCLogger.php.txt
+vendor/mos/anax/doc/api/files/Log.CLogger.html
+vendor/mos/anax/doc/api/files/MVC%2FCApplicationBasic.php.txt
+vendor/mos/anax/doc/api/files/MVC%2FCDispatcherBasic.php.txt
+vendor/mos/anax/doc/api/files/MVC%2FErrorController.php.txt
+vendor/mos/anax/doc/api/files/MVC%2FTRedirectHelpers.php.txt
+vendor/mos/anax/doc/api/files/MVC.CApplicationBasic.html
+vendor/mos/anax/doc/api/files/MVC.CDispatcherBasic.html
+vendor/mos/anax/doc/api/files/MVC.ErrorController.html
+vendor/mos/anax/doc/api/files/MVC.TRedirectHelpers.html
+vendor/mos/anax/doc/api/files/Navigation%2FCNavbar.php.txt
+vendor/mos/anax/doc/api/files/Navigation.CNavbar.html
+vendor/mos/anax/doc/api/files/Request%2FCRequestBasic.php.txt
+vendor/mos/anax/doc/api/files/Request.CRequestBasic.html
+vendor/mos/anax/doc/api/files/Response%2FCResponseBasic.php.txt
+vendor/mos/anax/doc/api/files/Response.CResponseBasic.html
+vendor/mos/anax/doc/api/files/Route%2FCRouteBasic.php.txt
+vendor/mos/anax/doc/api/files/Route%2FCRouterBasic.php.txt
+vendor/mos/anax/doc/api/files/Route.CRouteBasic.html
+vendor/mos/anax/doc/api/files/Route.CRouterBasic.html
+vendor/mos/anax/doc/api/files/Session%2FCSession.php.txt
+vendor/mos/anax/doc/api/files/Session.CSession.html
+vendor/mos/anax/doc/api/files/TConfigure.html
+vendor/mos/anax/doc/api/files/TConfigure.php.txt
+vendor/mos/anax/doc/api/files/TSingleton.html
+vendor/mos/anax/doc/api/files/TSingleton.php.txt
+vendor/mos/anax/doc/api/files/ThemeEngine%2FCThemeBasic.php.txt
+vendor/mos/anax/doc/api/files/ThemeEngine%2FIThemeEngine.php.txt
+vendor/mos/anax/doc/api/files/ThemeEngine.CThemeBasic.html
+vendor/mos/anax/doc/api/files/ThemeEngine.CThemeEngine.html
+vendor/mos/anax/doc/api/files/ThemeEngine.IThemeEngine.html
+vendor/mos/anax/doc/api/files/Url%2FCUrl.php.txt
+vendor/mos/anax/doc/api/files/Url.CUrl.html
+vendor/mos/anax/doc/api/files/Validate%2FCValidate.php.txt
+vendor/mos/anax/doc/api/files/Validate.CValidate.html
+vendor/mos/anax/doc/api/files/View%2FCViewBasic.php.txt
+vendor/mos/anax/doc/api/files/View%2FCViewContainerBasic.php.txt
+vendor/mos/anax/doc/api/files/View.CView.html
+vendor/mos/anax/doc/api/files/View.CViewBasic.html
+vendor/mos/anax/doc/api/files/View.CViewContainer.html
+vendor/mos/anax/doc/api/files/View.CViewContainerBasic.htmlvendor/mos/anax/doc/api/files/View.Exception.html
+vendor/mos/anax/doc/api/files/autoload.html
+vendor/mos/anax/doc/api/files/autoload.php.txt
+vendor/mos/anax/doc/api/files/functions.html
+vendor/mos/anax/doc/api/files/functions.php.txt
+vendor/mos/anax/doc/api/files/Cache/
+vendor/mos/anax/doc/api/files/Cache/CFileCache.php.txt
+vendor/mos/anax/doc/api/files/Content/
+vendor/mos/anax/doc/api/files/Content/CFileBasedContent.php.txt
+vendor/mos/anax/doc/api/files/Content/CFileContent.php.txt
+vendor/mos/anax/doc/api/files/Content/CPageContent.php.txt
+vendor/mos/anax/doc/api/files/Content/CTextFilter.php.txt
+vendor/mos/anax/doc/api/files/DI/
+vendor/mos/anax/doc/api/files/DI/CDI.php.txt
+vendor/mos/anax/doc/api/files/DI/CDIArray.php.txt
+vendor/mos/anax/doc/api/files/DI/CDIFactoryDefault.php.txt
+vendor/mos/anax/doc/api/files/DI/CDIFactoryDocumentation.php.txt
+vendor/mos/anax/doc/api/files/DI/CDIFactoryTest.php.txtvendor/mos/anax/doc/api/files/DI/IDI.php.txtvendor/mos/anax/doc/api/files/DI/IInjectionAware.php.txtvendor/mos/anax/doc/api/files/DI/TInjectable.php.txtvendor/mos/anax/doc/api/files/DI/TInjectionAware.php.txtvendor/mos/anax/doc/api/files/Exception/vendor/mos/anax/doc/api/files/Exception/ForbiddenException.php.txtvendor/mos/anax/doc/api/files/Exception/InternalServerErrorException.php.txtvendor/mos/anax/doc/api/files/Exception/NotFoundException.php.txtvendor/mos/anax/doc/api/files/Flash/
+vendor/mos/anax/doc/api/files/Flash/CFlashBasic.php.txt
+vendor/mos/anax/doc/api/files/HTMLForm/
+vendor/mos/anax/doc/api/files/HTMLForm/CFormExample.php.txt
+vendor/mos/anax/doc/api/files/HTMLForm/FormController.php.txt
+vendor/mos/anax/doc/api/files/HTMLForm/FormSmallController.php.txt
+vendor/mos/anax/doc/api/files/Kernel/
+vendor/mos/anax/doc/api/files/Kernel/CAnax.php.txt
+vendor/mos/anax/doc/api/files/Kernel/CAnaxSingleton.php.txt
+vendor/mos/anax/doc/api/files/Loader/
+vendor/mos/anax/doc/api/files/Loader/CPsr4Autoloader.php.txt
+vendor/mos/anax/doc/api/files/Log/
+vendor/mos/anax/doc/api/files/Log/CLogger.php.txt
+vendor/mos/anax/doc/api/files/MVC/
+vendor/mos/anax/doc/api/files/MVC/CApplicationBasic.php.txt
+vendor/mos/anax/doc/api/files/MVC/CDispatcherBasic.php.txt
+vendor/mos/anax/doc/api/files/MVC/ErrorController.php.txt
+vendor/mos/anax/doc/api/files/MVC/TRedirectHelpers.php.txt
+vendor/mos/anax/doc/api/files/Navigation/
+vendor/mos/anax/doc/api/files/Navigation/CNavbar.php.txt
+vendor/mos/anax/doc/api/files/Request/
+vendor/mos/anax/doc/api/files/Request/CRequestBasic.php.txt
+vendor/mos/anax/doc/api/files/Response/
+vendor/mos/anax/doc/api/files/Response/CResponseBasic.php.txt
+vendor/mos/anax/doc/api/files/Route/
+vendor/mos/anax/doc/api/files/Route/CRouteBasic.php.txt
+vendor/mos/anax/doc/api/files/Route/CRouterBasic.php.txt
+vendor/mos/anax/doc/api/files/Session/
+vendor/mos/anax/doc/api/files/Session/CSession.php.txt
+vendor/mos/anax/doc/api/files/ThemeEngine/
+vendor/mos/anax/doc/api/files/ThemeEngine/CThemeBasic.php.txt
+vendor/mos/anax/doc/api/files/ThemeEngine/CThemeEngine.php.txt
+vendor/mos/anax/doc/api/files/ThemeEngine/IThemeEngine.php.txt
+vendor/mos/anax/doc/api/files/Url/
+vendor/mos/anax/doc/api/files/Url/CUrl.php.txt
+vendor/mos/anax/doc/api/files/Validate/
+vendor/mos/anax/doc/api/files/Validate/CValidate.php.txt
+vendor/mos/anax/doc/api/files/View/
+vendor/mos/anax/doc/api/files/View/CView.php.txt
+vendor/mos/anax/doc/api/files/View/CViewBasic.php.txt
+vendor/mos/anax/doc/api/files/View/CViewContainer.php.txt
+vendor/mos/anax/doc/api/files/View/CViewContainerBasic.php.txt
+vendor/mos/anax/doc/api/files/View/Exception.php.txt
+vendor/mos/anax/doc/api/font/
+vendor/mos/anax/doc/api/font/FontAwesome.otf
+vendor/mos/anax/doc/api/font/fontawesome-webfont.eot
+vendor/mos/anax/doc/api/font/fontawesome-webfont.svg
+vendor/mos/anax/doc/api/font/fontawesome-webfont.ttf
+vendor/mos/anax/doc/api/font/fontawesome-webfont.woff
+vendor/mos/anax/doc/api/graphs/
+vendor/mos/anax/doc/api/graphs/class.html
+vendor/mos/anax/doc/api/graphs/classes.svg
+vendor/mos/anax/doc/api/images/
+vendor/mos/anax/doc/api/images/apple-touch-icon-114x114.png
+vendor/mos/anax/doc/api/images/apple-touch-icon-72x72.png
+vendor/mos/anax/doc/api/images/apple-touch-icon.png
+vendor/mos/anax/doc/api/images/custom-icons.svg
+vendor/mos/anax/doc/api/images/favicon.ico
+vendor/mos/anax/doc/api/images/hierarchy-item.png
+vendor/mos/anax/doc/api/images/icon-class-13x13.png
+vendor/mos/anax/doc/api/images/icon-class.svg
+vendor/mos/anax/doc/api/images/icon-interface-13x13.png
+vendor/mos/anax/doc/api/images/icon-interface.svg
+vendor/mos/anax/doc/api/images/icon-trait-13x13.png
+vendor/mos/anax/doc/api/images/icon-trait.svg
+vendor/mos/anax/doc/api/images/iviewer/
+vendor/mos/anax/doc/api/images/iviewer/grab.cur
+vendor/mos/anax/doc/api/images/iviewer/hand.cur
+vendor/mos/anax/doc/api/images/iviewer/iviewer.rotate_left.png
+vendor/mos/anax/doc/api/images/iviewer/iviewer.rotate_right.png
+vendor/mos/anax/doc/api/images/iviewer/iviewer.zoom_fit.png
+vendor/mos/anax/doc/api/images/iviewer/iviewer.zoom_in.png
+vendor/mos/anax/doc/api/images/iviewer/iviewer.zoom_out.png
+vendor/mos/anax/doc/api/images/iviewer/iviewer.zoom_zero.png
+vendor/mos/anax/doc/api/js/
+vendor/mos/anax/doc/api/js/bootstrap.min.js
+vendor/mos/anax/doc/api/js/html5.js
+vendor/mos/anax/doc/api/js/jquery-1.11.0.min.js
+vendor/mos/anax/doc/api/js/jquery.dotdotdot-1.5.9.js
+vendor/mos/anax/doc/api/js/jquery.dotdotdot-1.5.9.min.js
+vendor/mos/anax/doc/api/js/jquery.iviewer.js
+vendor/mos/anax/doc/api/js/jquery.iviewer.min.js
+vendor/mos/anax/doc/api/js/jquery.mousewheel.js
+vendor/mos/anax/doc/api/js/jquery.smooth-scroll.js
+vendor/mos/anax/doc/api/js/prism.min.js
+vendor/mos/anax/doc/api/js/ui/
+vendor/mos/anax/doc/api/js/ui/1.10.4/
+vendor/mos/anax/doc/api/js/ui/1.10.4/jquery-ui.min.js
+vendor/mos/anax/doc/api/namespaces/
+vendor/mos/anax/doc/api/namespaces/Anax.Cache.html
+vendor/mos/anax/doc/api/namespaces/Anax.Content.html
+vendor/mos/anax/doc/api/namespaces/Anax.DI.html
+vendor/mos/anax/doc/api/namespaces/Anax.Exception.html
+vendor/mos/anax/doc/api/namespaces/Anax.Flash.html
+vendor/mos/anax/doc/api/namespaces/Anax.HTMLForm.html
+vendor/mos/anax/doc/api/namespaces/Anax.Kernel.html
+vendor/mos/anax/doc/api/namespaces/Anax.Loader.html
+vendor/mos/anax/doc/api/namespaces/Anax.Log.html
+vendor/mos/anax/doc/api/namespaces/Anax.MVC.html
+vendor/mos/anax/doc/api/namespaces/Anax.Navigation.html
+vendor/mos/anax/doc/api/namespaces/Anax.Request.html
+vendor/mos/anax/doc/api/namespaces/Anax.Response.html
+vendor/mos/anax/doc/api/namespaces/Anax.Route.html
+vendor/mos/anax/doc/api/namespaces/Anax.Session.html
+vendor/mos/anax/doc/api/namespaces/Anax.ThemeEngine.html
+vendor/mos/anax/doc/api/namespaces/Anax.Url.html
+vendor/mos/anax/doc/api/namespaces/Anax.Validate.html
+vendor/mos/anax/doc/api/namespaces/Anax.View.html
+vendor/mos/anax/doc/api/namespaces/Anax.html
+vendor/mos/anax/doc/api/namespaces/default.html
+vendor/mos/anax/doc/api/phpdoc-cache-02/
+vendor/mos/anax/doc/api/phpdoc-cache-02/phpdoc-cache-file_d096481b5d19f209396d95bbb266841b.dat
+vendor/mos/anax/doc/api/phpdoc-cache-04/
+vendor/mos/anax/doc/api/phpdoc-cache-04/phpdoc-cache-file_dc990c119383ed0071c30327f1260fde.dat
+vendor/mos/anax/doc/api/phpdoc-cache-08/
+vendor/mos/anax/doc/api/phpdoc-cache-08/phpdoc-cache-file_e9ab5d40db043eaec578d87285066e8b.dat
+vendor/mos/anax/doc/api/phpdoc-cache-17/
+vendor/mos/anax/doc/api/phpdoc-cache-17/phpdoc-cache-file_2f96d28a3d0ff0aafc7c6dda127adc71.dat
+vendor/mos/anax/doc/api/phpdoc-cache-17/phpdoc-cache-file_6891d35d0ab63e1d1b975f523c11a018.dat
+vendor/mos/anax/doc/api/phpdoc-cache-24/
+vendor/mos/anax/doc/api/phpdoc-cache-24/phpdoc-cache-file_d774b7badac8cf84fb44b4c064d8e634.dat
+vendor/mos/anax/doc/api/phpdoc-cache-29/
+vendor/mos/anax/doc/api/phpdoc-cache-29/phpdoc-cache-file_03ed2af8eb745bbfb64a39648c7bec02.dat
+vendor/mos/anax/doc/api/phpdoc-cache-2e/
+vendor/mos/anax/doc/api/phpdoc-cache-2e/phpdoc-cache-settings.dat
+vendor/mos/anax/doc/api/phpdoc-cache-36/
+vendor/mos/anax/doc/api/phpdoc-cache-36/phpdoc-cache-file_f49174700331036e1112aa37a823d76f.dat
+vendor/mos/anax/doc/api/phpdoc-cache-3b/
+vendor/mos/anax/doc/api/phpdoc-cache-3b/phpdoc-cache-file_42952e918d3c06863630afe5a6a6c9f1.dat
+vendor/mos/anax/doc/api/phpdoc-cache-43/
+vendor/mos/anax/doc/api/phpdoc-cache-43/phpdoc-cache-file_53f3c45d919bbf7c8de1fb46a3615d67.dat
+vendor/mos/anax/doc/api/phpdoc-cache-45/
+vendor/mos/anax/doc/api/phpdoc-cache-45/phpdoc-cache-file_13f082dcd372d714a923ccb8dbb788e5.dat
+vendor/mos/anax/doc/api/phpdoc-cache-4d/
+vendor/mos/anax/doc/api/phpdoc-cache-4d/phpdoc-cache-file_9652b1f3d75bf6cada4f19e287b9ae27.dat
+vendor/mos/anax/doc/api/phpdoc-cache-51/vendor/mos/anax/doc/api/phpdoc-cache-51/phpdoc-cache-file_e22309cc0dfd6b2f255d28b366f73a75.datvendor/mos/anax/doc/api/phpdoc-cache-53/vendor/mos/anax/doc/api/phpdoc-cache-53/phpdoc-cache-file_cae940510a0215cd9d0b5f55ea29e311.datvendor/mos/anax/doc/api/phpdoc-cache-63/vendor/mos/anax/doc/api/phpdoc-cache-63/phpdoc-cache-file_d05eb9f2654dde8791a39bbbd07f829a.dat
+vendor/mos/anax/doc/api/phpdoc-cache-65/
+vendor/mos/anax/doc/api/phpdoc-cache-65/phpdoc-cache-file_1528edcc62215727a536b8978b38a266.dat
+vendor/mos/anax/doc/api/phpdoc-cache-65/phpdoc-cache-file_50d048eaa60dd2043067e90abc4a27a4.dat
+vendor/mos/anax/doc/api/phpdoc-cache-67/
+vendor/mos/anax/doc/api/phpdoc-cache-67/phpdoc-cache-file_cc47d1f74002d2a918fc485e9df3492e.dat
+vendor/mos/anax/doc/api/phpdoc-cache-69/
+vendor/mos/anax/doc/api/phpdoc-cache-69/phpdoc-cache-file_e97047678a625a3ff2ca431980d07d26.dat
+vendor/mos/anax/doc/api/phpdoc-cache-6e/
+vendor/mos/anax/doc/api/phpdoc-cache-6e/phpdoc-cache-file_5759b8d2acf76f5ee56249f858cff2cd.dat
+vendor/mos/anax/doc/api/phpdoc-cache-71/
+vendor/mos/anax/doc/api/phpdoc-cache-71/phpdoc-cache-file_dd5ebed62551415a138fb1123f682bcc.dat
+vendor/mos/anax/doc/api/phpdoc-cache-87/
+vendor/mos/anax/doc/api/phpdoc-cache-87/phpdoc-cache-file_4bfb0233192e9712661c5933535d65ad.dat
+vendor/mos/anax/doc/api/phpdoc-cache-87/phpdoc-cache-file_f2fd5a1b0e0f1f531153f98a045a69c4.dat
+vendor/mos/anax/doc/api/phpdoc-cache-89/
+vendor/mos/anax/doc/api/phpdoc-cache-89/phpdoc-cache-file_4b8b472d4f4ea2abd6d0f6fc8bccfa6b.dat
+vendor/mos/anax/doc/api/phpdoc-cache-8f/
+vendor/mos/anax/doc/api/phpdoc-cache-8f/phpdoc-cache-file_42f449969ee17c4156f1170c9f540860.dat
+vendor/mos/anax/doc/api/phpdoc-cache-91/
+vendor/mos/anax/doc/api/phpdoc-cache-91/phpdoc-cache-file_7df7ed59b6526e230395c2f3ae4a15e8.dat
+vendor/mos/anax/doc/api/phpdoc-cache-94/
+vendor/mos/anax/doc/api/phpdoc-cache-94/phpdoc-cache-file_17bd4d4039e92e303d19c5aa2ea19816.dat
+vendor/mos/anax/doc/api/phpdoc-cache-95/
+vendor/mos/anax/doc/api/phpdoc-cache-95/phpdoc-cache-file_85dcd319a15bf74669de16dd949ebfd5.dat
+vendor/mos/anax/doc/api/phpdoc-cache-95/phpdoc-cache-file_af65329fbb534a6fdaf02005bddd151b.dat
+vendor/mos/anax/doc/api/phpdoc-cache-9a/
+vendor/mos/anax/doc/api/phpdoc-cache-9a/phpdoc-cache-file_bb33aea7320287d9681b80687481ddd7.dat
+vendor/mos/anax/doc/api/phpdoc-cache-9d/
+vendor/mos/anax/doc/api/phpdoc-cache-9d/phpdoc-cache-file_95606649dec485fcccb4acc059cc6707.dat
+vendor/mos/anax/doc/api/phpdoc-cache-9d/phpdoc-cache-file_b8cb6d4c9fb87680cd978539dfd45102.dat
+vendor/mos/anax/doc/api/phpdoc-cache-ad/
+vendor/mos/anax/doc/api/phpdoc-cache-ad/phpdoc-cache-file_0f3645db2fa44345e4644150a35fbfb4.dat
+vendor/mos/anax/doc/api/phpdoc-cache-b1/
+vendor/mos/anax/doc/api/phpdoc-cache-b1/phpdoc-cache-file_6ed2a9f60ef6cdc647b28ddc2244993c.dat
+vendor/mos/anax/doc/api/phpdoc-cache-b2/
+vendor/mos/anax/doc/api/phpdoc-cache-b2/phpdoc-cache-file_790256b0783eed0b4fcf719b96ccd30a.dat
+vendor/mos/anax/doc/api/phpdoc-cache-b2/phpdoc-cache-file_e2ba016d7174abc516119080482812d7.dat
+vendor/mos/anax/doc/api/phpdoc-cache-b5/
+vendor/mos/anax/doc/api/phpdoc-cache-b5/phpdoc-cache-file_78cd5aa3783a74555c9938a2a81d01c6.dat
+vendor/mos/anax/doc/api/phpdoc-cache-b7/
+vendor/mos/anax/doc/api/phpdoc-cache-b7/phpdoc-cache-file_1b19046390d7652cdc394df4a334fdfc.dat
+vendor/mos/anax/doc/api/phpdoc-cache-c0/
+vendor/mos/anax/doc/api/phpdoc-cache-c0/phpdoc-cache-file_15746124d0c8a451eadbdd65ddb19fca.dat
+vendor/mos/anax/doc/api/phpdoc-cache-d4/
+vendor/mos/anax/doc/api/phpdoc-cache-d4/phpdoc-cache-file_0e0ed0df3f7e45b846c6cff2ab208a8b.dat
+vendor/mos/anax/doc/api/phpdoc-cache-d7/
+vendor/mos/anax/doc/api/phpdoc-cache-d7/phpdoc-cache-file_4f5b27df3c44833607f14af93b9918f8.dat
+vendor/mos/anax/doc/api/phpdoc-cache-dd/
+vendor/mos/anax/doc/api/phpdoc-cache-dd/phpdoc-cache-file_3ca70e55186180af56277732090d8fe4.dat
+vendor/mos/anax/doc/api/phpdoc-cache-e7/
+vendor/mos/anax/doc/api/phpdoc-cache-e7/phpdoc-cache-file_361a1e4c9b1f22cd4c18a321c7c10687.dat
+vendor/mos/anax/doc/api/phpdoc-cache-ed/
+vendor/mos/anax/doc/api/phpdoc-cache-ed/phpdoc-cache-file_c6e779847800bd1b4fac6c6f40b79505.dat
+vendor/mos/anax/doc/api/phpdoc-cache-f3/
+vendor/mos/anax/doc/api/phpdoc-cache-f3/phpdoc-cache-file_b6ca97088de8ceb610fdec403712067f.dat
+vendor/mos/anax/doc/api/phpdoc-cache-f4/
+vendor/mos/anax/doc/api/phpdoc-cache-f4/phpdoc-cache-file_e4b4f7fd24d6adb0aaded671879d8ffa.dat
+vendor/mos/anax/doc/api/reports/
+vendor/mos/anax/doc/api/reports/deprecated.html
+vendor/mos/anax/doc/api/reports/errors.html
+vendor/mos/anax/doc/api/reports/markers.html
+vendor/mos/anax/src/
+vendor/mos/anax/src/Exception.php
+vendor/mos/anax/src/ISingleton.php
+vendor/mos/anax/src/TConfigure.php
+vendor/mos/anax/src/TLoadFile.php
+vendor/mos/anax/src/TSingleton.php
+vendor/mos/anax/src/functions.php
+vendor/mos/anax/src/AddOn/
+vendor/mos/anax/src/AddOn/PHPBB/
+vendor/mos/anax/src/AddOn/PHPBB/CInterface.php
+vendor/mos/anax/src/App/
+vendor/mos/anax/src/App/CAnaxDefault.php
+vendor/mos/anax/src/Cache/
+vendor/mos/anax/src/Cache/CFileCache.php
+vendor/mos/anax/src/Content/
+vendor/mos/anax/src/Content/CFileBasedContent.php
+vendor/mos/anax/src/Content/CFileContent.php
+vendor/mos/anax/src/Content/CPageContent.php
+vendor/mos/anax/src/Content/Exception.php
+vendor/mos/anax/src/Content/TFBCBreadcrumb.php
+vendor/mos/anax/src/Content/TFBCLoadAdditionalContent.php
+vendor/mos/anax/src/Content/TFBCUtilities.php
+vendor/mos/anax/src/DI/
+vendor/mos/anax/src/DI/CDI.php
+vendor/mos/anax/src/DI/CDIArray.php
+vendor/mos/anax/src/DI/CDIFactoryDefault.php
+vendor/mos/anax/src/DI/CDIFactoryDocumentation.php
+vendor/mos/anax/src/DI/CDIFactoryTest.php
+vendor/mos/anax/src/DI/IDI.php
+vendor/mos/anax/src/DI/IInjectionAware.php
+vendor/mos/anax/src/DI/TInjectable.php
+vendor/mos/anax/src/DI/TInjectionAware.php
+vendor/mos/anax/src/Exception/
+vendor/mos/anax/src/Exception/ForbiddenException.php
+vendor/mos/anax/src/Exception/InternalServerErrorException.php
+vendor/mos/anax/src/Exception/NotFoundException.php
+vendor/mos/anax/src/Flash/
+vendor/mos/anax/src/Flash/CFlashBasic.php
+vendor/mos/anax/src/Loader/
+vendor/mos/anax/src/Loader/CPsr4Autoloader.php
+vendor/mos/anax/src/Log/
+vendor/mos/anax/src/Log/CLogger.php
+vendor/mos/anax/src/MVC/
+vendor/mos/anax/src/MVC/CApplicationBasic.php
+vendor/mos/anax/src/MVC/CDispatcherBasic.php
+vendor/mos/anax/src/MVC/ErrorController.php
+vendor/mos/anax/src/MVC/TRedirectHelpers.php
+vendor/mos/anax/src/Navigation/
+vendor/mos/anax/src/Navigation/CNavbar.php
+vendor/mos/anax/src/Request/
+vendor/mos/anax/src/Request/CRequestBasic.php
+vendor/mos/anax/src/Response/
+vendor/mos/anax/src/Response/CResponseBasic.php
+vendor/mos/anax/src/Route/
+vendor/mos/anax/src/Route/CRouteBasic.php
+vendor/mos/anax/src/Route/CRouterBasic.php
+vendor/mos/anax/src/Session/
+vendor/mos/anax/src/Session/CSession.php
+vendor/mos/anax/src/ThemeEngine/
+vendor/mos/anax/src/ThemeEngine/CThemeEngine.php
+vendor/mos/anax/src/ThemeEngine/IThemeEngine.php
+vendor/mos/anax/src/Url/
+vendor/mos/anax/src/Url/CUrl.php
+vendor/mos/anax/src/Validate/
+vendor/mos/anax/src/Validate/CValidate.php
+vendor/mos/anax/src/View/
+vendor/mos/anax/src/View/CView.phpvendor/mos/anax/src/View/CViewContainer.phpvendor/mos/anax/src/View/Exception.phpvendor/mos/anax/src/View/THelpers.phpvendor/mos/anax/test/vendor/mos/anax/test/config.phpvendor/mos/anax/test/DI/vendor/mos/anax/test/DI/CDITest.phpvendor/mos/anax/test/MVC/vendor/mos/anax/test/MVC/CDispatcherBasicTest.phpvendor/mos/anax/test/Request/vendor/mos/anax/test/Request/CRequestBasicTest.phpvendor/mos/anax/test/Route/vendor/mos/anax/test/Route/CRouteTest.phpvendor/mos/anax/test/Session/vendor/mos/anax/test/Session/CSessionTest.phpvendor/mos/anax/test/Url/vendor/mos/anax/test/Url/CUrlTest.phpvendor/mos/anax/test/Validate/vendor/mos/anax/test/Validate/CValidateTest.phpvendor/mos/anax/test/View/
+vendor/mos/anax/test/View/CViewTest.php
+vendor/mos/anax/theme/
+vendor/mos/anax/theme/anax-base/
+vendor/mos/anax/theme/anax-base/Makefile
+vendor/mos/anax/theme/anax-base/style/
+vendor/mos/anax/theme/anax-base/style/anax-base.css
+vendor/mos/anax/theme/anax-base/style/anax-base.less
+vendor/mos/anax/theme/anax-base/style/anax-base.min.css
+vendor/mos/anax/theme/anax-base/style/link-list.less
+vendor/mos/anax/theme/anax-base/style/navbar.less
+vendor/mos/anax/theme/mos-theme/
+vendor/mos/anax/theme/mos-theme/Makefile
+vendor/mos/anax/theme/mos-theme/customize.less
+vendor/mos/anax/theme/mos-theme/style.less
+vendor/mos/anax/theme/mos-theme/src/
+vendor/mos/anax/view/
+vendor/mos/anax/view/default/
+vendor/mos/anax/view/default/403.tpl.php
+vendor/mos/anax/view/default/404.tpl.php
+vendor/mos/anax/view/default/article-toc.tpl.php
+vendor/mos/anax/view/default/article.tpl.php
+vendor/mos/anax/view/default/block.tpl.php
+vendor/mos/anax/view/default/blog-list.tpl.php
+vendor/mos/anax/view/default/blog-meta-footer.tpl.php
+vendor/mos/anax/view/default/blog-post.tpl.php
+vendor/mos/anax/view/default/blog-toc-next-prev-page.tpl.php
+vendor/mos/anax/view/default/blog-toc.tpl.php
+vendor/mos/anax/view/default/breadcrumb.tpl.php
+vendor/mos/anax/view/default/byline.tpl.php
+vendor/mos/anax/view/default/columns.tpl.php
+vendor/mos/anax/view/default/content.tpl.php
+vendor/mos/anax/view/default/empty.tpl.php
+vendor/mos/anax/view/default/error-routes.tpl.php
+vendor/mos/anax/view/default/error.tpl.php
+vendor/mos/anax/view/default/google-analytics.tpl.php
+vendor/mos/anax/view/default/header.tpl.php
+vendor/mos/anax/view/default/image.tpl.php
+vendor/mos/anax/view/default/index.tpl.php
+vendor/mos/anax/view/default/link-list.tpl.php
+vendor/mos/anax/view/default/navbar-max.tpl.php
+vendor/mos/anax/view/default/navbar.tpl.php
+vendor/mos/anax/view/default/next-previous.tpl.php
+vendor/mos/anax/view/default/page.tpl.php
+vendor/mos/anax/view/default/profile-phpbb.tpl.php
+vendor/mos/anax/view/default/search.tpl.php
+vendor/mos/anax/view/default/share.tpl.php
+vendor/mos/anax/view/default/test.tpl.php
+vendor/mos/anax/view/default/toc-list.tpl.php
+vendor/mos/anax/view/default/toc.tpl.php
+vendor/mos/anax/webroot/
+vendor/mos/anax/webroot/.htaccess
+vendor/mos/anax/webroot/doc.php
+vendor/mos/anax/webroot/favicon.ico
+vendor/mos/anax/webroot/index_template.php
+vendor/mos/anax/webroot/css/
+vendor/mos/anax/webroot/css/anax-base.css
+vendor/mos/anax/webroot/css/anax-base.min.css
+vendor/mos/anax/webroot/css/mos-theme.css
+vendor/mos/anax/webroot/img/
+vendor/mos/anax/webroot/img/anax.png
+vendor/mos/anax/webroot/img/dice-faces.png
+vendor/mos/anax/webroot/img/me/
+vendor/mos/anax/webroot/img/me/me-1.jpg
+vendor/mos/anax/webroot/img/me/me-2.jpg
+vendor/mos/anax/webroot/img/me/me-4.jpg
+vendor/mos/anax/webroot/img/me/me-6.jpg
+vendor/mos/anax/webroot/js/
+vendor/mos/anax/webroot/js/modernizr.js
+vendor/mos/anax/webroot/js/slideshow.js
+vendor/mos/anax/webroot/test/
+vendor/mos/anax/webroot/test/add-views-using-forward.php
+vendor/mos/anax/webroot/test/create-urls.php
+vendor/mos/anax/webroot/test/di-loaded-services.php
+vendor/mos/anax/webroot/test/error-message-verbosity.php
+vendor/mos/anax/webroot/test/exception-as-http-error-page.php
+vendor/mos/anax/webroot/test/navigation-bar.php
+vendor/mos/anax/webroot/test/wrong-route-message-verbosity.php
+vendor/mos/cimage/
+vendor/mos/cimage/.scrutinizer.yml
+vendor/mos/cimage/CAsciiArt.php
+vendor/mos/cimage/CCache.php
+vendor/mos/cimage/CFastTrackCache.php
+vendor/mos/cimage/CHttpGet.php
+vendor/mos/cimage/CImage.php
+vendor/mos/cimage/CRemoteImage.php
+vendor/mos/cimage/CWhitelist.php
+vendor/mos/cimage/LICENSE.txt
+vendor/mos/cimage/REVISION.md
+vendor/mos/cimage/autoload.php
+vendor/mos/cimage/composer.json
+vendor/mos/cimage/defines.php
+vendor/mos/cimage/functions.php
+vendor/mos/cimage/phpcs.xml
+vendor/mos/cimage/phpdoc.xml
+vendor/mos/cimage/phpunit.xml
+vendor/mos/cimage/cache/
+vendor/mos/cimage/docs/
+vendor/mos/cimage/icc/
+vendor/mos/cimage/icc/sRGB_IEC61966-2-1_black_scaled.icc
+vendor/mos/cimage/test/
+vendor/mos/cimage/test/CCacheTest.php
+vendor/mos/cimage/test/CImageDummyTest.php
+vendor/mos/cimage/test/CImageRemoteDownloadTest.php
+vendor/mos/cimage/test/CImageSRGBTest.php
+vendor/mos/cimage/test/CWhitelistTest.php
+vendor/mos/cimage/test/config.php
+vendor/mos/cimage/webroot/
+vendor/mos/cimage/webroot/check_system.php
+vendor/mos/cimage/webroot/htaccess
+vendor/mos/cimage/webroot/img.php
+vendor/mos/cimage/webroot/img_config.php
+vendor/mos/cimage/webroot/img_header.php
+vendor/mos/cimage/webroot/imgd.php
+vendor/mos/cimage/webroot/imgf.php
+vendor/mos/cimage/webroot/imgf_config.php
+vendor/mos/cimage/webroot/imgp.php
+vendor/mos/cimage/webroot/imgs.php
+vendor/mos/cimage/webroot/compare/
+vendor/mos/cimage/webroot/compare/compare-test.php
+vendor/mos/cimage/webroot/compare/compare.php
+vendor/mos/cimage/webroot/compare/issue117-PNG24.php
+vendor/mos/cimage/webroot/img/
+vendor/mos/cimage/webroot/img/apple.jpg
+vendor/mos/cimage/webroot/img/apple_trans.gif
+vendor/mos/cimage/webroot/img/ball24.png
+vendor/mos/cimage/webroot/img/ball8.png
+vendor/mos/cimage/webroot/img/car-gif
+vendor/mos/cimage/webroot/img/car-jpg
+vendor/mos/cimage/webroot/img/car-pngvendor/mos/cimage/webroot/img/car.gifvendor/mos/cimage/webroot/img/car.jpgvendor/mos/cimage/webroot/img/car.png
+vendor/mos/cimage/webroot/img/car_srgb.png
+vendor/mos/cimage/webroot/img/circle_trans.png
+vendor/mos/cimage/webroot/img/duke.png
+vendor/mos/cimage/webroot/img/glider_anim.gif
+vendor/mos/cimage/webroot/img/hamburger.jpg
+vendor/mos/cimage/webroot/img/higher.jpgvendor/mos/cimage/webroot/img/kodim04.pngvendor/mos/cimage/webroot/img/kodim07.pngvendor/mos/cimage/webroot/img/kodim08.pngvendor/mos/cimage/webroot/img/kodim13.pngvendor/mos/cimage/webroot/img/kodim15.pngvendor/mos/cimage/webroot/img/kodim22.pngvendor/mos/cimage/webroot/img/kodim23.pngvendor/mos/cimage/webroot/img/kodim24.pngvendor/mos/cimage/webroot/img/lena.jpgvendor/mos/cimage/webroot/img/lena.pngvendor/mos/cimage/webroot/img/lena.tifvendor/mos/cimage/webroot/img/lena.webp
+vendor/mos/cimage/webroot/img/planet.gif
+vendor/mos/cimage/webroot/img/round24.png
+vendor/mos/cimage/webroot/img/round8.PNG
+vendor/mos/cimage/webroot/img/wider.JPEG
+vendor/mos/cimage/webroot/img/wider.JPG
+vendor/mos/cimage/webroot/img/issue117/
+vendor/mos/cimage/webroot/img/issue117/tri_cimage.png
+vendor/mos/cimage/webroot/img/issue117/tri_imagemagick.png
+vendor/mos/cimage/webroot/img/issue117/tri_imageresizing.png
+vendor/mos/cimage/webroot/img/issue117/tri_original.png
+vendor/mos/cimage/webroot/img/issue29/
+vendor/mos/cimage/webroot/img/issue29/400x265.jpg
+vendor/mos/cimage/webroot/img/issue29/400x268.jpg
+vendor/mos/cimage/webroot/img/issue29/400x300.jpg
+vendor/mos/cimage/webroot/img/issue29/465x304.jpg
+vendor/mos/cimage/webroot/img/issue29/640x273.jpg
+vendor/mos/cimage/webroot/img/issue34/
+vendor/mos/cimage/webroot/img/issue34/3.jpg
+vendor/mos/cimage/webroot/img/issue34/4.jpg
+vendor/mos/cimage/webroot/img/issue36/
+vendor/mos/cimage/webroot/img/issue36/flower-0.jpg
+vendor/mos/cimage/webroot/img/issue36/flower-180.jpg
+vendor/mos/cimage/webroot/img/issue36/flower-270.jpg
+vendor/mos/cimage/webroot/img/issue36/flower-90.jpg
+vendor/mos/cimage/webroot/img/issue36/me-0.jpg
+vendor/mos/cimage/webroot/img/issue36/me-180.jpg
+vendor/mos/cimage/webroot/img/issue36/me-270.jpg
+vendor/mos/cimage/webroot/img/issue36/me-90.jpg
+vendor/mos/cimage/webroot/img/issue40/
+vendor/mos/cimage/webroot/img/issue40/source.jpg
+vendor/mos/cimage/webroot/img/webp/
+vendor/mos/cimage/webroot/img/webp/1.webp
+vendor/mos/cimage/webroot/js/
+vendor/mos/cimage/webroot/js/cimage.js
+vendor/mos/cimage/webroot/test/
+vendor/mos/cimage/webroot/test/config.php
+vendor/mos/cimage/webroot/test/template.php
+vendor/mos/cimage/webroot/test/test.php
+vendor/mos/cimage/webroot/test/test_issue101-dummy.php
+vendor/mos/cimage/webroot/test/test_issue29.php
+vendor/mos/cimage/webroot/test/test_issue36_aro.php
+vendor/mos/cimage/webroot/test/test_issue36_rb-ra-180.php
+vendor/mos/cimage/webroot/test/test_issue36_rb-ra-270.php
+vendor/mos/cimage/webroot/test/test_issue36_rb-ra-45.php
+vendor/mos/cimage/webroot/test/test_issue36_rb-ra-90.php
+vendor/mos/cimage/webroot/test/test_issue38.php
+vendor/mos/cimage/webroot/test/test_issue40.php
+vendor/mos/cimage/webroot/test/test_issue49.php
+vendor/mos/cimage/webroot/test/test_issue52-cf.php
+vendor/mos/cimage/webroot/test/test_issue52-stretch.php
+vendor/mos/cimage/webroot/test/test_issue52.php
+vendor/mos/cimage/webroot/test/test_issue58.php
+vendor/mos/cimage/webroot/test/test_issue60.php
+vendor/mos/cimage/webroot/test/test_issue85.php
+vendor/mos/cimage/webroot/test/test_option-crop.php
+vendor/mos/cimage/webroot/test/test_option-no-upscale.php
+vendor/mos/cimage/webroot/test/test_option-save-as.php
+vendor/mos/ctextfilter/
+vendor/mos/ctextfilter/.phpcs.xml
+vendor/mos/ctextfilter/.phpdoc.xml
+vendor/mos/ctextfilter/.phpmd.xml
+vendor/mos/ctextfilter/.phpunit.xml
+vendor/mos/ctextfilter/.scrutinizer.yml
+vendor/mos/ctextfilter/LICENSE.txt
+vendor/mos/ctextfilter/Makefile
+vendor/mos/ctextfilter/REVISION.md
+vendor/mos/ctextfilter/composer.json
+vendor/mos/ctextfilter/composer.lock
+vendor/mos/ctextfilter/docs/
+vendor/mos/ctextfilter/src/
+vendor/mos/ctextfilter/src/TextFilter/
+vendor/mos/ctextfilter/src/TextFilter/CTextFilter.php
+vendor/mos/ctextfilter/src/TextFilter/Exception.php
+vendor/mos/ctextfilter/src/TextFilter/TShortcode.php
+vendor/mos/ctextfilter/src/TextFilter/TTextUtilities.php
+vendor/mos/ctextfilter/test/
+vendor/mos/ctextfilter/test/config.php
+vendor/mos/ctextfilter/test/src/
+vendor/mos/ctextfilter/test/src/TextFilter/
+vendor/mos/ctextfilter/test/src/TextFilter/CTextFilterTest.php
+vendor/mos/ctextfilter/test/src/TextFilter/CTextFilterUtilitiesTest.php
+vendor/mos/ctextfilter/webroot/
+vendor/mos/ctextfilter/webroot/check_system.php
+vendor/mos/ctextfilter/webroot/jsonfrontmatter.php
+vendor/mos/ctextfilter/webroot/smartypants.php
+vendor/mos/ctextfilter/webroot/textfilter.php
+vendor/mos/ctextfilter/webroot/yamlfrontmatter.php
+vendor/mos/ctextfilter/webroot/css/
+vendor/mos/ctextfilter/webroot/css/default.css
+vendor/mos/ctextfilter/webroot/css/geshi.css
+vendor/scrivo/
+vendor/scrivo/highlight.php/
+vendor/scrivo/highlight.php/AUTHORS.txt
+vendor/scrivo/highlight.php/composer.json
+vendor/scrivo/highlight.php/example.php
+vendor/scrivo/highlight.php/Highlight/
+vendor/scrivo/highlight.php/Highlight/Autoloader.php
+vendor/scrivo/highlight.php/Highlight/Highlighter.php
+vendor/scrivo/highlight.php/Highlight/JsonRef.php
+vendor/scrivo/highlight.php/Highlight/Language.php
+vendor/scrivo/highlight.php/Highlight/languages/
+vendor/scrivo/highlight.php/Highlight/languages/1c.json
+vendor/scrivo/highlight.php/Highlight/languages/accesslog.json
+vendor/scrivo/highlight.php/Highlight/languages/actionscript.json
+vendor/scrivo/highlight.php/Highlight/languages/apache.json
+vendor/scrivo/highlight.php/Highlight/languages/applescript.json
+vendor/scrivo/highlight.php/Highlight/languages/armasm.json
+vendor/scrivo/highlight.php/Highlight/languages/asciidoc.json
+vendor/scrivo/highlight.php/Highlight/languages/aspectj.json
+vendor/scrivo/highlight.php/Highlight/languages/autohotkey.json
+vendor/scrivo/highlight.php/Highlight/languages/autoit.json
+vendor/scrivo/highlight.php/Highlight/languages/avrasm.json
+vendor/scrivo/highlight.php/Highlight/languages/axapta.json
+vendor/scrivo/highlight.php/Highlight/languages/bash.json
+vendor/scrivo/highlight.php/Highlight/languages/brainfuck.json
+vendor/scrivo/highlight.php/Highlight/languages/cal.json
+vendor/scrivo/highlight.php/Highlight/languages/capnproto.json
+vendor/scrivo/highlight.php/Highlight/languages/ceylon.json
+vendor/scrivo/highlight.php/Highlight/languages/clojure-repl.json
+vendor/scrivo/highlight.php/Highlight/languages/clojure.json
+vendor/scrivo/highlight.php/Highlight/languages/cmake.json
+vendor/scrivo/highlight.php/Highlight/languages/coffeescript.json
+vendor/scrivo/highlight.php/Highlight/languages/cos.json
+vendor/scrivo/highlight.php/Highlight/languages/cpp.json
+vendor/scrivo/highlight.php/Highlight/languages/crmsh.json
+vendor/scrivo/highlight.php/Highlight/languages/crystal.json
+vendor/scrivo/highlight.php/Highlight/languages/cs.json
+vendor/scrivo/highlight.php/Highlight/languages/css.json
+vendor/scrivo/highlight.php/Highlight/languages/d.json
+vendor/scrivo/highlight.php/Highlight/languages/dart.json
+vendor/scrivo/highlight.php/Highlight/languages/delphi.json
+vendor/scrivo/highlight.php/Highlight/languages/diff.json
+vendor/scrivo/highlight.php/Highlight/languages/django.json
+vendor/scrivo/highlight.php/Highlight/languages/dns.json
+vendor/scrivo/highlight.php/Highlight/languages/dockerfile.json
+vendor/scrivo/highlight.php/Highlight/languages/dos.jsonvendor/scrivo/highlight.php/Highlight/languages/dust.jsonvendor/scrivo/highlight.php/Highlight/languages/elixir.jsonvendor/scrivo/highlight.php/Highlight/languages/elm.jsonvendor/scrivo/highlight.php/Highlight/languages/erb.json
+vendor/scrivo/highlight.php/Highlight/languages/erlang-repl.json
+vendor/scrivo/highlight.php/Highlight/languages/erlang.json
+vendor/scrivo/highlight.php/Highlight/languages/fix.json
+vendor/scrivo/highlight.php/Highlight/languages/fortran.json
+vendor/scrivo/highlight.php/Highlight/languages/fsharp.json
+vendor/scrivo/highlight.php/Highlight/languages/gams.json
+vendor/scrivo/highlight.php/Highlight/languages/gcode.json
+vendor/scrivo/highlight.php/Highlight/languages/gherkin.json
+vendor/scrivo/highlight.php/Highlight/languages/glsl.json
+vendor/scrivo/highlight.php/Highlight/languages/go.json
+vendor/scrivo/highlight.php/Highlight/languages/golo.json
+vendor/scrivo/highlight.php/Highlight/languages/gradle.json
+vendor/scrivo/highlight.php/Highlight/languages/groovy.json
+vendor/scrivo/highlight.php/Highlight/languages/haml.json
+vendor/scrivo/highlight.php/Highlight/languages/handlebars.json
+vendor/scrivo/highlight.php/Highlight/languages/haskell.json
+vendor/scrivo/highlight.php/Highlight/languages/haxe.json
+vendor/scrivo/highlight.php/Highlight/languages/hsp.json
+vendor/scrivo/highlight.php/Highlight/languages/http.json
+vendor/scrivo/highlight.php/Highlight/languages/inform7.json
+vendor/scrivo/highlight.php/Highlight/languages/ini.json
+vendor/scrivo/highlight.php/Highlight/languages/irpf90.json
+vendor/scrivo/highlight.php/Highlight/languages/java.json
+vendor/scrivo/highlight.php/Highlight/languages/javascript.json
+vendor/scrivo/highlight.php/Highlight/languages/json.json
+vendor/scrivo/highlight.php/Highlight/languages/julia.json
+vendor/scrivo/highlight.php/Highlight/languages/kotlin.json
+vendor/scrivo/highlight.php/Highlight/languages/lasso.json
+vendor/scrivo/highlight.php/Highlight/languages/less.json
+vendor/scrivo/highlight.php/Highlight/languages/lisp.json
+vendor/scrivo/highlight.php/Highlight/languages/livecodeserver.json
+vendor/scrivo/highlight.php/Highlight/languages/livescript.json
+vendor/scrivo/highlight.php/Highlight/languages/lua.json
+vendor/scrivo/highlight.php/Highlight/languages/makefile.json
+vendor/scrivo/highlight.php/Highlight/languages/markdown.json
+vendor/scrivo/highlight.php/Highlight/languages/mathematica.json
+vendor/scrivo/highlight.php/Highlight/languages/matlab.json
+vendor/scrivo/highlight.php/Highlight/languages/mel.json
+vendor/scrivo/highlight.php/Highlight/languages/mercury.json
+vendor/scrivo/highlight.php/Highlight/languages/mipsasm.json
+vendor/scrivo/highlight.php/Highlight/languages/mizar.json
+vendor/scrivo/highlight.php/Highlight/languages/mojolicious.json
+vendor/scrivo/highlight.php/Highlight/languages/monkey.json
+vendor/scrivo/highlight.php/Highlight/languages/nginx.json
+vendor/scrivo/highlight.php/Highlight/languages/nimrod.json
+vendor/scrivo/highlight.php/Highlight/languages/nix.json
+vendor/scrivo/highlight.php/Highlight/languages/nsis.json
+vendor/scrivo/highlight.php/Highlight/languages/objectivec.json
+vendor/scrivo/highlight.php/Highlight/languages/ocaml.json
+vendor/scrivo/highlight.php/Highlight/languages/openscad.json
+vendor/scrivo/highlight.php/Highlight/languages/oxygene.json
+vendor/scrivo/highlight.php/Highlight/languages/parser3.json
+vendor/scrivo/highlight.php/Highlight/languages/perl.json
+vendor/scrivo/highlight.php/Highlight/languages/pf.json
+vendor/scrivo/highlight.php/Highlight/languages/php.json
+vendor/scrivo/highlight.php/Highlight/languages/powershell.json
+vendor/scrivo/highlight.php/Highlight/languages/processing.json
+vendor/scrivo/highlight.php/Highlight/languages/profile.json
+vendor/scrivo/highlight.php/Highlight/languages/prolog.json
+vendor/scrivo/highlight.php/Highlight/languages/protobuf.json
+vendor/scrivo/highlight.php/Highlight/languages/puppet.json
+vendor/scrivo/highlight.php/Highlight/languages/python.json
+vendor/scrivo/highlight.php/Highlight/languages/q.json
+vendor/scrivo/highlight.php/Highlight/languages/r.json
+vendor/scrivo/highlight.php/Highlight/languages/rib.json
+vendor/scrivo/highlight.php/Highlight/languages/roboconf.json
+vendor/scrivo/highlight.php/Highlight/languages/rsl.json
+vendor/scrivo/highlight.php/Highlight/languages/ruby.json
+vendor/scrivo/highlight.php/Highlight/languages/ruleslanguage.json
+vendor/scrivo/highlight.php/Highlight/languages/rust.json
+vendor/scrivo/highlight.php/Highlight/languages/scala.json
+vendor/scrivo/highlight.php/Highlight/languages/scheme.json
+vendor/scrivo/highlight.php/Highlight/languages/scilab.json
+vendor/scrivo/highlight.php/Highlight/languages/scss.json
+vendor/scrivo/highlight.php/Highlight/languages/smali.json
+vendor/scrivo/highlight.php/Highlight/languages/smalltalk.json
+vendor/scrivo/highlight.php/Highlight/languages/sml.json
+vendor/scrivo/highlight.php/Highlight/languages/sqf.json
+vendor/scrivo/highlight.php/Highlight/languages/sql.json
+vendor/scrivo/highlight.php/Highlight/languages/stata.json
+vendor/scrivo/highlight.php/Highlight/languages/step21.json
+vendor/scrivo/highlight.php/Highlight/languages/stylus.json
+vendor/scrivo/highlight.php/Highlight/languages/swift.json
+vendor/scrivo/highlight.php/Highlight/languages/tcl.json
+vendor/scrivo/highlight.php/Highlight/languages/tex.json
+vendor/scrivo/highlight.php/Highlight/languages/thrift.json
+vendor/scrivo/highlight.php/Highlight/languages/tp.json
+vendor/scrivo/highlight.php/Highlight/languages/twig.json
+vendor/scrivo/highlight.php/Highlight/languages/typescript.json
+vendor/scrivo/highlight.php/Highlight/languages/vala.json
+vendor/scrivo/highlight.php/Highlight/languages/vbnet.json
+vendor/scrivo/highlight.php/Highlight/languages/vbscript-html.json
+vendor/scrivo/highlight.php/Highlight/languages/vbscript.json
+vendor/scrivo/highlight.php/Highlight/languages/verilog.json
+vendor/scrivo/highlight.php/Highlight/languages/vhdl.json
+vendor/scrivo/highlight.php/Highlight/languages/vim.json
+vendor/scrivo/highlight.php/Highlight/languages/x86asm.json
+vendor/scrivo/highlight.php/Highlight/languages/xl.jsonvendor/scrivo/highlight.php/Highlight/languages/xml.jsonvendor/scrivo/highlight.php/Highlight/languages/xquery.jsonvendor/scrivo/highlight.php/Highlight/languages/yaml.jsonvendor/scrivo/highlight.php/Highlight/languages/zephir.jsonvendor/scrivo/highlight.php/demo/
+vendor/scrivo/highlight.php/demo/.htaccess
+vendor/scrivo/highlight.php/demo/compare.php
+vendor/scrivo/highlight.php/demo/demo.php
+vendor/scrivo/highlight.php/demo/highlight.pack.js
+vendor/scrivo/highlight.php/styles/
+vendor/scrivo/highlight.php/styles/agate.css
+vendor/scrivo/highlight.php/styles/androidstudio.css
+vendor/scrivo/highlight.php/styles/arta.css
+vendor/scrivo/highlight.php/styles/ascetic.cssvendor/scrivo/highlight.php/styles/atelier-cave-dark.cssvendor/scrivo/highlight.php/styles/atelier-cave-light.css
+vendor/scrivo/highlight.php/styles/atelier-dune-dark.css
+vendor/scrivo/highlight.php/styles/atelier-dune-light.css
+vendor/scrivo/highlight.php/styles/atelier-estuary-dark.css
+vendor/scrivo/highlight.php/styles/atelier-estuary-light.css
+vendor/scrivo/highlight.php/styles/atelier-forest-dark.css
+vendor/scrivo/highlight.php/styles/atelier-forest-light.css
+vendor/scrivo/highlight.php/styles/atelier-heath-dark.css
+vendor/scrivo/highlight.php/styles/atelier-heath-light.css
+vendor/scrivo/highlight.php/styles/atelier-lakeside-dark.css
+vendor/scrivo/highlight.php/styles/atelier-lakeside-light.css
+vendor/scrivo/highlight.php/styles/atelier-plateau-dark.css
+vendor/scrivo/highlight.php/styles/atelier-plateau-light.css
+vendor/scrivo/highlight.php/styles/atelier-savanna-dark.css
+vendor/scrivo/highlight.php/styles/atelier-savanna-light.css
+vendor/scrivo/highlight.php/styles/atelier-seaside-dark.css
+vendor/scrivo/highlight.php/styles/atelier-seaside-light.css
+vendor/scrivo/highlight.php/styles/atelier-sulphurpool-dark.css
+vendor/scrivo/highlight.php/styles/atelier-sulphurpool-light.css
+vendor/scrivo/highlight.php/styles/brown-paper.css
+vendor/scrivo/highlight.php/styles/brown-papersq.png
+vendor/scrivo/highlight.php/styles/codepen-embed.css
+vendor/scrivo/highlight.php/styles/color-brewer.css
+vendor/scrivo/highlight.php/styles/dark.css
+vendor/scrivo/highlight.php/styles/darkula.css
+vendor/scrivo/highlight.php/styles/default.css
+vendor/scrivo/highlight.php/styles/docco.css
+vendor/scrivo/highlight.php/styles/far.css
+vendor/scrivo/highlight.php/styles/foundation.css
+vendor/scrivo/highlight.php/styles/github-gist.css
+vendor/scrivo/highlight.php/styles/github.css
+vendor/scrivo/highlight.php/styles/googlecode.css
+vendor/scrivo/highlight.php/styles/grayscale.css
+vendor/scrivo/highlight.php/styles/hopscotch.css
+vendor/scrivo/highlight.php/styles/hybrid.css
+vendor/scrivo/highlight.php/styles/idea.css
+vendor/scrivo/highlight.php/styles/ir-black.css
+vendor/scrivo/highlight.php/styles/kimbie.dark.css
+vendor/scrivo/highlight.php/styles/kimbie.light.css
+vendor/scrivo/highlight.php/styles/magula.css
+vendor/scrivo/highlight.php/styles/mono-blue.css
+vendor/scrivo/highlight.php/styles/monokai-sublime.css
+vendor/scrivo/highlight.php/styles/monokai.css
+vendor/scrivo/highlight.php/styles/obsidian.css
+vendor/scrivo/highlight.php/styles/paraiso-dark.css
+vendor/scrivo/highlight.php/styles/paraiso-light.css
+vendor/scrivo/highlight.php/styles/pojoaque.css
+vendor/scrivo/highlight.php/styles/pojoaque.jpg
+vendor/scrivo/highlight.php/styles/railscasts.css
+vendor/scrivo/highlight.php/styles/rainbow.css
+vendor/scrivo/highlight.php/styles/school-book.css
+vendor/scrivo/highlight.php/styles/school-book.png
+vendor/scrivo/highlight.php/styles/solarized-dark.css
+vendor/scrivo/highlight.php/styles/solarized-light.css
+vendor/scrivo/highlight.php/styles/sunburst.css
+vendor/scrivo/highlight.php/styles/tomorrow-night-blue.css
+vendor/scrivo/highlight.php/styles/tomorrow-night-bright.css
+vendor/scrivo/highlight.php/styles/tomorrow-night-eighties.css
+vendor/scrivo/highlight.php/styles/tomorrow-night.css
+vendor/scrivo/highlight.php/styles/tomorrow.css
+vendor/scrivo/highlight.php/styles/vs.css
+vendor/scrivo/highlight.php/styles/xcode.css
+vendor/scrivo/highlight.php/styles/zenburn.css
+vendor/scrivo/highlight.php/test/
+vendor/scrivo/highlight.php/test/HighlightAutoTest.php
+vendor/scrivo/highlight.php/test/HighlightTest.php
+vendor/scrivo/highlight.php/test/MarkupTest.php
+vendor/scrivo/highlight.php/test/SpecialTest.php
+vendor/scrivo/highlight.php/test/detect/
+vendor/scrivo/highlight.php/test/detect/1c/
+vendor/scrivo/highlight.php/test/detect/1c/default.txt
+vendor/scrivo/highlight.php/test/detect/accesslog/
+vendor/scrivo/highlight.php/test/detect/accesslog/default.txt
+vendor/scrivo/highlight.php/test/detect/actionscript/
+vendor/scrivo/highlight.php/test/detect/actionscript/default.txt
+vendor/scrivo/highlight.php/test/detect/apache/
+vendor/scrivo/highlight.php/test/detect/apache/default.txt
+vendor/scrivo/highlight.php/test/detect/applescript/
+vendor/scrivo/highlight.php/test/detect/applescript/default.txt
+vendor/scrivo/highlight.php/test/detect/armasm/
+vendor/scrivo/highlight.php/test/detect/armasm/default.txt
+vendor/scrivo/highlight.php/test/detect/asciidoc/
+vendor/scrivo/highlight.php/test/detect/asciidoc/default.txt
+vendor/scrivo/highlight.php/test/detect/aspectj/
+vendor/scrivo/highlight.php/test/detect/aspectj/default.txt
+vendor/scrivo/highlight.php/test/detect/autohotkey/
+vendor/scrivo/highlight.php/test/detect/autohotkey/default.txt
+vendor/scrivo/highlight.php/test/detect/autoit/
+vendor/scrivo/highlight.php/test/detect/autoit/default.txt
+vendor/scrivo/highlight.php/test/detect/avrasm/
+vendor/scrivo/highlight.php/test/detect/avrasm/default.txt
+vendor/scrivo/highlight.php/test/detect/axapta/
+vendor/scrivo/highlight.php/test/detect/axapta/default.txt
+vendor/scrivo/highlight.php/test/detect/bash/vendor/scrivo/highlight.php/test/detect/bash/default.txtvendor/scrivo/highlight.php/test/detect/brainfuck/
+vendor/scrivo/highlight.php/test/detect/brainfuck/default.txt
+vendor/scrivo/highlight.php/test/detect/cal/
+vendor/scrivo/highlight.php/test/detect/cal/default.txt
+vendor/scrivo/highlight.php/test/detect/capnproto/
+vendor/scrivo/highlight.php/test/detect/capnproto/default.txt
+vendor/scrivo/highlight.php/test/detect/ceylon/
+vendor/scrivo/highlight.php/test/detect/ceylon/default.txt
+vendor/scrivo/highlight.php/test/detect/clojure-repl/
+vendor/scrivo/highlight.php/test/detect/clojure-repl/default.txt
+vendor/scrivo/highlight.php/test/detect/clojure/
+vendor/scrivo/highlight.php/test/detect/clojure/default.txt
+vendor/scrivo/highlight.php/test/detect/cmake/
+vendor/scrivo/highlight.php/test/detect/cmake/default.txt
+vendor/scrivo/highlight.php/test/detect/coffeescript/
+vendor/scrivo/highlight.php/test/detect/coffeescript/default.txt
+vendor/scrivo/highlight.php/test/detect/cos/
+vendor/scrivo/highlight.php/test/detect/cos/default.txt
+vendor/scrivo/highlight.php/test/detect/cpp/
+vendor/scrivo/highlight.php/test/detect/cpp/comment.txt
+vendor/scrivo/highlight.php/test/detect/cpp/default.txt
+vendor/scrivo/highlight.php/test/detect/crmsh/
+vendor/scrivo/highlight.php/test/detect/crmsh/default.txt
+vendor/scrivo/highlight.php/test/detect/crystal/
+vendor/scrivo/highlight.php/test/detect/crystal/default.txt
+vendor/scrivo/highlight.php/test/detect/cs/
+vendor/scrivo/highlight.php/test/detect/cs/default.txt
+vendor/scrivo/highlight.php/test/detect/css/
+vendor/scrivo/highlight.php/test/detect/css/default.txt
+vendor/scrivo/highlight.php/test/detect/d/
+vendor/scrivo/highlight.php/test/detect/d/default.txt
+vendor/scrivo/highlight.php/test/detect/dart/
+vendor/scrivo/highlight.php/test/detect/dart/default.txt
+vendor/scrivo/highlight.php/test/detect/delphi/
+vendor/scrivo/highlight.php/test/detect/delphi/default.txt
+vendor/scrivo/highlight.php/test/detect/diff/
+vendor/scrivo/highlight.php/test/detect/diff/default.txt
+vendor/scrivo/highlight.php/test/detect/django/
+vendor/scrivo/highlight.php/test/detect/django/default.txt
+vendor/scrivo/highlight.php/test/detect/dns/
+vendor/scrivo/highlight.php/test/detect/dns/default.txt
+vendor/scrivo/highlight.php/test/detect/dockerfile/
+vendor/scrivo/highlight.php/test/detect/dockerfile/default.txt
+vendor/scrivo/highlight.php/test/detect/dos/
+vendor/scrivo/highlight.php/test/detect/dos/default.txt
+vendor/scrivo/highlight.php/test/detect/dust/
+vendor/scrivo/highlight.php/test/detect/dust/default.txt
+vendor/scrivo/highlight.php/test/detect/elixir/
+vendor/scrivo/highlight.php/test/detect/elixir/default.txt
+vendor/scrivo/highlight.php/test/detect/elm/
+vendor/scrivo/highlight.php/test/detect/elm/default.txt
+vendor/scrivo/highlight.php/test/detect/erb/
+vendor/scrivo/highlight.php/test/detect/erb/default.txt
+vendor/scrivo/highlight.php/test/detect/erlang-repl/
+vendor/scrivo/highlight.php/test/detect/erlang-repl/default.txt
+vendor/scrivo/highlight.php/test/detect/erlang/
+vendor/scrivo/highlight.php/test/detect/erlang/default.txt
+vendor/scrivo/highlight.php/test/detect/fix/
+vendor/scrivo/highlight.php/test/detect/fix/default.txt
+vendor/scrivo/highlight.php/test/detect/fortran/
+vendor/scrivo/highlight.php/test/detect/fortran/default.txt
+vendor/scrivo/highlight.php/test/detect/fsharp/
+vendor/scrivo/highlight.php/test/detect/fsharp/default.txt
+vendor/scrivo/highlight.php/test/detect/gams/
+vendor/scrivo/highlight.php/test/detect/gams/default.txt
+vendor/scrivo/highlight.php/test/detect/gcode/
+vendor/scrivo/highlight.php/test/detect/gcode/default.txt
+vendor/scrivo/highlight.php/test/detect/gherkin/
+vendor/scrivo/highlight.php/test/detect/gherkin/default.txt
+vendor/scrivo/highlight.php/test/detect/glsl/
+vendor/scrivo/highlight.php/test/detect/glsl/default.txt
+vendor/scrivo/highlight.php/test/detect/go/
+vendor/scrivo/highlight.php/test/detect/go/default.txt
+vendor/scrivo/highlight.php/test/detect/golo/
+vendor/scrivo/highlight.php/test/detect/golo/default.txt
+vendor/scrivo/highlight.php/test/detect/gradle/
+vendor/scrivo/highlight.php/test/detect/gradle/default.txt
+vendor/scrivo/highlight.php/test/detect/groovy/
+vendor/scrivo/highlight.php/test/detect/groovy/default.txt
+vendor/scrivo/highlight.php/test/detect/haml/
+vendor/scrivo/highlight.php/test/detect/haml/default.txt
+vendor/scrivo/highlight.php/test/detect/handlebars/
+vendor/scrivo/highlight.php/test/detect/handlebars/default.txt
+vendor/scrivo/highlight.php/test/detect/haskell/
+vendor/scrivo/highlight.php/test/detect/haskell/default.txt
+vendor/scrivo/highlight.php/test/detect/haxe/
+vendor/scrivo/highlight.php/test/detect/haxe/default.txt
+vendor/scrivo/highlight.php/test/detect/hsp/
+vendor/scrivo/highlight.php/test/detect/hsp/default.txt
+vendor/scrivo/highlight.php/test/detect/http/
+vendor/scrivo/highlight.php/test/detect/http/default.txt
+vendor/scrivo/highlight.php/test/detect/inform7/
+vendor/scrivo/highlight.php/test/detect/inform7/default.txt
+vendor/scrivo/highlight.php/test/detect/ini/
+vendor/scrivo/highlight.php/test/detect/ini/default.txt
+vendor/scrivo/highlight.php/test/detect/irpf90/
+vendor/scrivo/highlight.php/test/detect/irpf90/default.txt
+vendor/scrivo/highlight.php/test/detect/java/
+vendor/scrivo/highlight.php/test/detect/java/default.txt
+vendor/scrivo/highlight.php/test/detect/javascript/
+vendor/scrivo/highlight.php/test/detect/javascript/default.txt
+vendor/scrivo/highlight.php/test/detect/json/
+vendor/scrivo/highlight.php/test/detect/json/default.txt
+vendor/scrivo/highlight.php/test/detect/julia/
+vendor/scrivo/highlight.php/test/detect/julia/default.txt
+vendor/scrivo/highlight.php/test/detect/kotlin/
+vendor/scrivo/highlight.php/test/detect/kotlin/default.txt
+vendor/scrivo/highlight.php/test/detect/lasso/
+vendor/scrivo/highlight.php/test/detect/lasso/default.txt
+vendor/scrivo/highlight.php/test/detect/less/
+vendor/scrivo/highlight.php/test/detect/less/default.txt
+vendor/scrivo/highlight.php/test/detect/lisp/
+vendor/scrivo/highlight.php/test/detect/lisp/default.txt
+vendor/scrivo/highlight.php/test/detect/livecodeserver/
+vendor/scrivo/highlight.php/test/detect/livecodeserver/default.txt
+vendor/scrivo/highlight.php/test/detect/livescript/
+vendor/scrivo/highlight.php/test/detect/livescript/default.txt
+vendor/scrivo/highlight.php/test/detect/lua/
+vendor/scrivo/highlight.php/test/detect/lua/default.txt
+vendor/scrivo/highlight.php/test/detect/makefile/vendor/scrivo/highlight.php/test/detect/makefile/default.txtvendor/scrivo/highlight.php/test/detect/markdown/
+vendor/scrivo/highlight.php/test/detect/markdown/default.txt
+vendor/scrivo/highlight.php/test/detect/mathematica/
+vendor/scrivo/highlight.php/test/detect/mathematica/default.txtvendor/scrivo/highlight.php/test/detect/matlab/vendor/scrivo/highlight.php/test/detect/matlab/default.txt
+vendor/scrivo/highlight.php/test/detect/mel/
+vendor/scrivo/highlight.php/test/detect/mel/default.txt
+vendor/scrivo/highlight.php/test/detect/mercury/
+vendor/scrivo/highlight.php/test/detect/mercury/default.txt
+vendor/scrivo/highlight.php/test/detect/mipsasm/
+vendor/scrivo/highlight.php/test/detect/mipsasm/default.txt
+vendor/scrivo/highlight.php/test/detect/mizar/
+vendor/scrivo/highlight.php/test/detect/mizar/default.txt
+vendor/scrivo/highlight.php/test/detect/mojolicious/
+vendor/scrivo/highlight.php/test/detect/mojolicious/default.txt
+vendor/scrivo/highlight.php/test/detect/monkey/
+vendor/scrivo/highlight.php/test/detect/monkey/default.txt
+vendor/scrivo/highlight.php/test/detect/nginx/
+vendor/scrivo/highlight.php/test/detect/nginx/default.txt
+vendor/scrivo/highlight.php/test/detect/nimrod/
+vendor/scrivo/highlight.php/test/detect/nimrod/default.txt
+vendor/scrivo/highlight.php/test/detect/nix/
+vendor/scrivo/highlight.php/test/detect/nix/default.txt
+vendor/scrivo/highlight.php/test/detect/nsis/
+vendor/scrivo/highlight.php/test/detect/nsis/default.txt
+vendor/scrivo/highlight.php/test/detect/objectivec/
+vendor/scrivo/highlight.php/test/detect/objectivec/default.txt
+vendor/scrivo/highlight.php/test/detect/ocaml/
+vendor/scrivo/highlight.php/test/detect/ocaml/default.txt
+vendor/scrivo/highlight.php/test/detect/openscad/
+vendor/scrivo/highlight.php/test/detect/openscad/default.txt
+vendor/scrivo/highlight.php/test/detect/oxygene/
+vendor/scrivo/highlight.php/test/detect/oxygene/default.txt
+vendor/scrivo/highlight.php/test/detect/parser3/
+vendor/scrivo/highlight.php/test/detect/parser3/default.txt
+vendor/scrivo/highlight.php/test/detect/perl/
+vendor/scrivo/highlight.php/test/detect/perl/default.txt
+vendor/scrivo/highlight.php/test/detect/pf/
+vendor/scrivo/highlight.php/test/detect/pf/default.txt
+vendor/scrivo/highlight.php/test/detect/php/
+vendor/scrivo/highlight.php/test/detect/php/default.txt
+vendor/scrivo/highlight.php/test/detect/powershell/
+vendor/scrivo/highlight.php/test/detect/powershell/default.txt
+vendor/scrivo/highlight.php/test/detect/processing/
+vendor/scrivo/highlight.php/test/detect/processing/default.txt
+vendor/scrivo/highlight.php/test/detect/profile/
+vendor/scrivo/highlight.php/test/detect/profile/default.txt
+vendor/scrivo/highlight.php/test/detect/prolog/
+vendor/scrivo/highlight.php/test/detect/prolog/default.txt
+vendor/scrivo/highlight.php/test/detect/protobuf/
+vendor/scrivo/highlight.php/test/detect/protobuf/default.txt
+vendor/scrivo/highlight.php/test/detect/puppet/
+vendor/scrivo/highlight.php/test/detect/puppet/default.txt
+vendor/scrivo/highlight.php/test/detect/python/
+vendor/scrivo/highlight.php/test/detect/python/default.txt
+vendor/scrivo/highlight.php/test/detect/q/
+vendor/scrivo/highlight.php/test/detect/q/default.txt
+vendor/scrivo/highlight.php/test/detect/r/
+vendor/scrivo/highlight.php/test/detect/r/default.txt
+vendor/scrivo/highlight.php/test/detect/rib/
+vendor/scrivo/highlight.php/test/detect/rib/default.txt
+vendor/scrivo/highlight.php/test/detect/roboconf/
+vendor/scrivo/highlight.php/test/detect/roboconf/default.txt
+vendor/scrivo/highlight.php/test/detect/rsl/
+vendor/scrivo/highlight.php/test/detect/rsl/default.txt
+vendor/scrivo/highlight.php/test/detect/ruby/
+vendor/scrivo/highlight.php/test/detect/ruby/default.txt
+vendor/scrivo/highlight.php/test/detect/ruleslanguage/
+vendor/scrivo/highlight.php/test/detect/ruleslanguage/default.txt
+vendor/scrivo/highlight.php/test/detect/rust/
+vendor/scrivo/highlight.php/test/detect/rust/default.txt
+vendor/scrivo/highlight.php/test/detect/scala/
+vendor/scrivo/highlight.php/test/detect/scala/default.txt
+vendor/scrivo/highlight.php/test/detect/scheme/
+vendor/scrivo/highlight.php/test/detect/scheme/default.txt
+vendor/scrivo/highlight.php/test/detect/scilab/
+vendor/scrivo/highlight.php/test/detect/scilab/default.txt
+vendor/scrivo/highlight.php/test/detect/scss/
+vendor/scrivo/highlight.php/test/detect/scss/default.txt
+vendor/scrivo/highlight.php/test/detect/smali/
+vendor/scrivo/highlight.php/test/detect/smali/default.txt
+vendor/scrivo/highlight.php/test/detect/smalltalk/
+vendor/scrivo/highlight.php/test/detect/smalltalk/default.txt
+vendor/scrivo/highlight.php/test/detect/sml/
+vendor/scrivo/highlight.php/test/detect/sml/default.txt
+vendor/scrivo/highlight.php/test/detect/sqf/
+vendor/scrivo/highlight.php/test/detect/sqf/default.txt
+vendor/scrivo/highlight.php/test/detect/sql/
+vendor/scrivo/highlight.php/test/detect/sql/default.txt
+vendor/scrivo/highlight.php/test/detect/stata/
+vendor/scrivo/highlight.php/test/detect/stata/default.txt
+vendor/scrivo/highlight.php/test/detect/step21/
+vendor/scrivo/highlight.php/test/detect/step21/default.txt
+vendor/scrivo/highlight.php/test/detect/stylus/
+vendor/scrivo/highlight.php/test/detect/stylus/default.txt
+vendor/scrivo/highlight.php/test/detect/swift/
+vendor/scrivo/highlight.php/test/detect/swift/default.txt
+vendor/scrivo/highlight.php/test/detect/tcl/
+vendor/scrivo/highlight.php/test/detect/tcl/default.txt
+vendor/scrivo/highlight.php/test/detect/tex/
+vendor/scrivo/highlight.php/test/detect/tex/default.txt
+vendor/scrivo/highlight.php/test/detect/thrift/
+vendor/scrivo/highlight.php/test/detect/thrift/default.txt
+vendor/scrivo/highlight.php/test/detect/tp/
+vendor/scrivo/highlight.php/test/detect/tp/default.txt
+vendor/scrivo/highlight.php/test/detect/twig/
+vendor/scrivo/highlight.php/test/detect/twig/default.txt
+vendor/scrivo/highlight.php/test/detect/typescript/
+vendor/scrivo/highlight.php/test/detect/typescript/default.txt
+vendor/scrivo/highlight.php/test/detect/vala/
+vendor/scrivo/highlight.php/test/detect/vala/default.txt
+vendor/scrivo/highlight.php/test/detect/vbnet/
+vendor/scrivo/highlight.php/test/detect/vbnet/default.txt
+vendor/scrivo/highlight.php/test/detect/vbscript-html/
+vendor/scrivo/highlight.php/test/detect/vbscript-html/default.txt
+vendor/scrivo/highlight.php/test/detect/vbscript/
+vendor/scrivo/highlight.php/test/detect/vbscript/default.txt
+vendor/scrivo/highlight.php/test/detect/verilog/
+vendor/scrivo/highlight.php/test/detect/verilog/default.txt
+vendor/scrivo/highlight.php/test/detect/vhdl/
+vendor/scrivo/highlight.php/test/detect/vhdl/default.txt
+vendor/scrivo/highlight.php/test/detect/vim/
+vendor/scrivo/highlight.php/test/detect/vim/default.txt
+vendor/scrivo/highlight.php/test/detect/x86asm/
+vendor/scrivo/highlight.php/test/detect/x86asm/default.txt
+vendor/scrivo/highlight.php/test/detect/xl/
+vendor/scrivo/highlight.php/test/detect/xl/default.txt
+vendor/scrivo/highlight.php/test/detect/xml/
+vendor/scrivo/highlight.php/test/detect/xml/default.txt
+vendor/scrivo/highlight.php/test/detect/xml/groovy-julia.txt
+vendor/scrivo/highlight.php/test/detect/xquery/
+vendor/scrivo/highlight.php/test/detect/xquery/default.txt
+vendor/scrivo/highlight.php/test/detect/yaml/
+vendor/scrivo/highlight.php/test/detect/yaml/default.txt
+vendor/scrivo/highlight.php/test/detect/zephir/
+vendor/scrivo/highlight.php/test/detect/zephir/default.txt
+vendor/scrivo/highlight.php/test/markup/
+vendor/scrivo/highlight.php/test/markup/accesslog/
+vendor/scrivo/highlight.php/test/markup/accesslog/default.expect.txt
+vendor/scrivo/highlight.php/test/markup/accesslog/default.txt
+vendor/scrivo/highlight.php/test/markup/aspectj/
+vendor/scrivo/highlight.php/test/markup/aspectj/intertype-constructor.expect.txt
+vendor/scrivo/highlight.php/test/markup/aspectj/intertype-constructor.txt
+vendor/scrivo/highlight.php/test/markup/aspectj/intertype-method.expect.txt
+vendor/scrivo/highlight.php/test/markup/aspectj/intertype-method.txt
+vendor/scrivo/highlight.php/test/markup/bash/
+vendor/scrivo/highlight.php/test/markup/bash/no-numbers.expect.txt
+vendor/scrivo/highlight.php/test/markup/bash/no-numbers.txt
+vendor/scrivo/highlight.php/test/markup/ceylon/
+vendor/scrivo/highlight.php/test/markup/ceylon/nested-comments.expect.txt
+vendor/scrivo/highlight.php/test/markup/ceylon/nested-comments.txt
+vendor/scrivo/highlight.php/test/markup/clojure/
+vendor/scrivo/highlight.php/test/markup/clojure/symbols-numbers.expect.txt
+vendor/scrivo/highlight.php/test/markup/clojure/symbols-numbers.txt
+vendor/scrivo/highlight.php/test/markup/coffeescript/
+vendor/scrivo/highlight.php/test/markup/coffeescript/division.expect.txt
+vendor/scrivo/highlight.php/test/markup/coffeescript/division.txt
+vendor/scrivo/highlight.php/test/markup/coffeescript/function.expect.txtvendor/scrivo/highlight.php/test/markup/coffeescript/function.txtvendor/scrivo/highlight.php/test/markup/coffeescript/regex.expect.txtvendor/scrivo/highlight.php/test/markup/coffeescript/regex.txtvendor/scrivo/highlight.php/test/markup/cos/vendor/scrivo/highlight.php/test/markup/cos/basic.expect.txtvendor/scrivo/highlight.php/test/markup/cos/basic.txtvendor/scrivo/highlight.php/test/markup/cos/embedded.expect.txtvendor/scrivo/highlight.php/test/markup/cos/embedded.txtvendor/scrivo/highlight.php/test/markup/cpp/vendor/scrivo/highlight.php/test/markup/cpp/function-params.expect.txtvendor/scrivo/highlight.php/test/markup/cpp/function-params.txtvendor/scrivo/highlight.php/test/markup/cpp/function-preprocessor.expect.txtvendor/scrivo/highlight.php/test/markup/cpp/function-preprocessor.txtvendor/scrivo/highlight.php/test/markup/cpp/function-title.expect.txtvendor/scrivo/highlight.php/test/markup/cpp/function-title.txtvendor/scrivo/highlight.php/test/markup/cpp/pointers-returns.expect.txtvendor/scrivo/highlight.php/test/markup/cpp/pointers-returns.txtvendor/scrivo/highlight.php/test/markup/cpp/primative-types.expect.txtvendor/scrivo/highlight.php/test/markup/cpp/primative-types.txtvendor/scrivo/highlight.php/test/markup/cpp/string-literals.expect.txtvendor/scrivo/highlight.php/test/markup/cpp/string-literals.txtvendor/scrivo/highlight.php/test/markup/crystal/vendor/scrivo/highlight.php/test/markup/crystal/default.expect.txtvendor/scrivo/highlight.php/test/markup/crystal/default.txt
+vendor/scrivo/highlight.php/test/markup/cs/
+vendor/scrivo/highlight.php/test/markup/cs/dotted-namespace.expect.txt
+vendor/scrivo/highlight.php/test/markup/cs/dotted-namespace.txt
+vendor/scrivo/highlight.php/test/markup/cs/titles.expect.txt
+vendor/scrivo/highlight.php/test/markup/cs/titles.txt
+vendor/scrivo/highlight.php/test/markup/elixir/
+vendor/scrivo/highlight.php/test/markup/elixir/function-title.expect.txt
+vendor/scrivo/highlight.php/test/markup/elixir/function-title.txt
+vendor/scrivo/highlight.php/test/markup/fortran/
+vendor/scrivo/highlight.php/test/markup/fortran/numbers.expect.txt
+vendor/scrivo/highlight.php/test/markup/fortran/numbers.txt
+vendor/scrivo/highlight.php/test/markup/fsharp/
+vendor/scrivo/highlight.php/test/markup/fsharp/bang-keywords.expect.txt
+vendor/scrivo/highlight.php/test/markup/fsharp/bang-keywords.txt
+vendor/scrivo/highlight.php/test/markup/go/
+vendor/scrivo/highlight.php/test/markup/go/numbers.expect.txt
+vendor/scrivo/highlight.php/test/markup/go/numbers.txt
+vendor/scrivo/highlight.php/test/markup/golo/
+vendor/scrivo/highlight.php/test/markup/golo/default.expect.txt
+vendor/scrivo/highlight.php/test/markup/golo/default.txt
+vendor/scrivo/highlight.php/test/markup/haskell/
+vendor/scrivo/highlight.php/test/markup/haskell/infix.expect.txt
+vendor/scrivo/highlight.php/test/markup/haskell/infix.txt
+vendor/scrivo/highlight.php/test/markup/haskell/nested-comments.expect.txt
+vendor/scrivo/highlight.php/test/markup/haskell/nested-comments.txt
+vendor/scrivo/highlight.php/test/markup/http/
+vendor/scrivo/highlight.php/test/markup/http/default.expect.txt
+vendor/scrivo/highlight.php/test/markup/http/default.txt
+vendor/scrivo/highlight.php/test/markup/java/
+vendor/scrivo/highlight.php/test/markup/java/numbers.expect.txt
+vendor/scrivo/highlight.php/test/markup/java/numbers.txt
+vendor/scrivo/highlight.php/test/markup/java/titles.expect.txt
+vendor/scrivo/highlight.php/test/markup/java/titles.txt
+vendor/scrivo/highlight.php/test/markup/javascript/
+vendor/scrivo/highlight.php/test/markup/javascript/class.expect.txt
+vendor/scrivo/highlight.php/test/markup/javascript/class.txt
+vendor/scrivo/highlight.php/test/markup/javascript/default-parameters.expect.txt
+vendor/scrivo/highlight.php/test/markup/javascript/default-parameters.txt
+vendor/scrivo/highlight.php/test/markup/javascript/jsx.expect.txt
+vendor/scrivo/highlight.php/test/markup/javascript/jsx.txt
+vendor/scrivo/highlight.php/test/markup/javascript/keywords.expect.txt
+vendor/scrivo/highlight.php/test/markup/javascript/keywords.txt
+vendor/scrivo/highlight.php/test/markup/javascript/modules.expect.txt
+vendor/scrivo/highlight.php/test/markup/javascript/modules.txt
+vendor/scrivo/highlight.php/test/markup/kotlin/
+vendor/scrivo/highlight.php/test/markup/kotlin/class.expect.txt
+vendor/scrivo/highlight.php/test/markup/kotlin/class.txt
+vendor/scrivo/highlight.php/test/markup/kotlin/function.expect.txt
+vendor/scrivo/highlight.php/test/markup/kotlin/function.txt
+vendor/scrivo/highlight.php/test/markup/lasso/
+vendor/scrivo/highlight.php/test/markup/lasso/delimiters.expect.txt
+vendor/scrivo/highlight.php/test/markup/lasso/delimiters.txt
+vendor/scrivo/highlight.php/test/markup/lisp/
+vendor/scrivo/highlight.php/test/markup/lisp/mec.expect.txt
+vendor/scrivo/highlight.php/test/markup/lisp/mec.txt
+vendor/scrivo/highlight.php/test/markup/matlab/
+vendor/scrivo/highlight.php/test/markup/matlab/block_comment.expect.txt
+vendor/scrivo/highlight.php/test/markup/matlab/block_comment.txt
+vendor/scrivo/highlight.php/test/markup/ocaml/
+vendor/scrivo/highlight.php/test/markup/ocaml/literals.expect.txt
+vendor/scrivo/highlight.php/test/markup/ocaml/literals.txt
+vendor/scrivo/highlight.php/test/markup/ocaml/types.expect.txt
+vendor/scrivo/highlight.php/test/markup/ocaml/types.txt
+vendor/scrivo/highlight.php/test/markup/php/
+vendor/scrivo/highlight.php/test/markup/php/comments.expect.txt
+vendor/scrivo/highlight.php/test/markup/php/comments.txt
+vendor/scrivo/highlight.php/test/markup/php/heredoc.expect.txt
+vendor/scrivo/highlight.php/test/markup/php/heredoc.txt
+vendor/scrivo/highlight.php/test/markup/python/
+vendor/scrivo/highlight.php/test/markup/python/matrix-multiplication.expect.txt
+vendor/scrivo/highlight.php/test/markup/python/matrix-multiplication.txt
+vendor/scrivo/highlight.php/test/markup/ruby/
+vendor/scrivo/highlight.php/test/markup/ruby/gemfile.expect.txt
+vendor/scrivo/highlight.php/test/markup/ruby/gemfile.txt
+vendor/scrivo/highlight.php/test/markup/ruby/prompt.expect.txt
+vendor/scrivo/highlight.php/test/markup/ruby/prompt.txt
+vendor/scrivo/highlight.php/test/markup/ruby/regexes.expect.txt
+vendor/scrivo/highlight.php/test/markup/ruby/regexes.txt
+vendor/scrivo/highlight.php/test/markup/rust/
+vendor/scrivo/highlight.php/test/markup/rust/comments.expect.txt
+vendor/scrivo/highlight.php/test/markup/rust/comments.txt
+vendor/scrivo/highlight.php/test/markup/rust/numbers.expect.txt
+vendor/scrivo/highlight.php/test/markup/rust/numbers.txt
+vendor/scrivo/highlight.php/test/markup/rust/strings.expect.txt
+vendor/scrivo/highlight.php/test/markup/rust/strings.txt
+vendor/scrivo/highlight.php/test/markup/rust/traits.expect.txt
+vendor/scrivo/highlight.php/test/markup/rust/traits.txt
+vendor/scrivo/highlight.php/test/markup/rust/variables.expect.txt
+vendor/scrivo/highlight.php/test/markup/rust/variables.txt
+vendor/scrivo/highlight.php/test/markup/scala/
+vendor/scrivo/highlight.php/test/markup/scala/case-classes.expect.txt
+vendor/scrivo/highlight.php/test/markup/scala/case-classes.txt
+vendor/scrivo/highlight.php/test/markup/swift/
+vendor/scrivo/highlight.php/test/markup/swift/functions.expect.txt
+vendor/scrivo/highlight.php/test/markup/swift/functions.txt
+vendor/scrivo/highlight.php/test/markup/twig/
+vendor/scrivo/highlight.php/test/markup/twig/filter_with_underscore.expect.txt
+vendor/scrivo/highlight.php/test/markup/twig/filter_with_underscore.txt
+vendor/scrivo/highlight.php/test/markup/twig/template_tags.expect.txt
+vendor/scrivo/highlight.php/test/markup/twig/template_tags.txt
+vendor/scrivo/highlight.php/test/markup/typescript/
+vendor/scrivo/highlight.php/test/markup/typescript/class.expect.txt
+vendor/scrivo/highlight.php/test/markup/typescript/class.txt
+vendor/scrivo/highlight.php/test/markup/typescript/functions.expect.txt
+vendor/scrivo/highlight.php/test/markup/typescript/functions.txt
+vendor/scrivo/highlight.php/test/markup/typescript/jsx.expect.txt
+vendor/scrivo/highlight.php/test/markup/typescript/jsx.txt
+vendor/scrivo/highlight.php/test/special/
+vendor/scrivo/highlight.php/test/special/languagealias.expect.txt
+vendor/scrivo/highlight.php/test/special/languagealias.txt
+vendor/scrivo/highlight.php/test/special/sublanguages.expect.txt
+vendor/scrivo/highlight.php/test/special/sublanguages.txt
+vendor/scrivo/highlight.php/test/special/tabreplace.expect.txt
+vendor/scrivo/highlight.php/test/special/tabreplace.txt
+vendor/scrivo/highlight.php/tools/
+vendor/scrivo/highlight.php/tools/.htaccess
+vendor/scrivo/highlight.php/tools/export.js
+vendor/scrivo/highlight.php/tools/get_language_definitions.php
+vendor/scrivo/highlight.php/tools/launcher.js
+vendor/symfony/
+vendor/symfony/yaml/
+vendor/symfony/yaml/CHANGELOG.md
+vendor/symfony/yaml/Dumper.php
+vendor/symfony/yaml/Escaper.php
+vendor/symfony/yaml/Inline.php
+vendor/symfony/yaml/Parser.php
+vendor/symfony/yaml/Unescaper.php
+vendor/symfony/yaml/Yaml.php
+vendor/symfony/yaml/composer.json
+vendor/symfony/yaml/phpunit.xml.dist
+vendor/symfony/yaml/Exception/
+vendor/symfony/yaml/Exception/DumpException.php
+vendor/symfony/yaml/Exception/ExceptionInterface.php
+vendor/symfony/yaml/Exception/ParseException.php
+vendor/symfony/yaml/Exception/RuntimeException.php
+vendor/symfony/yaml/Tests/
+vendor/symfony/yaml/Tests/DumperTest.php
+vendor/symfony/yaml/Tests/InlineTest.php
+vendor/symfony/yaml/Tests/ParseExceptionTest.php
+vendor/symfony/yaml/Tests/ParserTest.php
+vendor/symfony/yaml/Tests/YamlTest.php
+vendor/symfony/yaml/Tests/Fixtures/
+vendor/symfony/yaml/Tests/Fixtures/YtsAnchorAlias.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsBasicTests.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsBlockMapping.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsDocumentSeparator.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsErrorTests.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsFlowCollections.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsFoldedScalars.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsNullsAndEmpties.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsSpecificationExamples.yml
+vendor/symfony/yaml/Tests/Fixtures/YtsTypeTransfers.yml
+vendor/symfony/yaml/Tests/Fixtures/arrow.gif
+vendor/symfony/yaml/Tests/Fixtures/embededPhp.yml
+vendor/symfony/yaml/Tests/Fixtures/escapedCharacters.yml
+vendor/symfony/yaml/Tests/Fixtures/index.yml
+vendor/symfony/yaml/Tests/Fixtures/multiple_lines_as_literal_block.yml
+vendor/symfony/yaml/Tests/Fixtures/sfComments.yml
+vendor/symfony/yaml/Tests/Fixtures/sfCompact.yml
+vendor/symfony/yaml/Tests/Fixtures/sfMergeKey.yml
+vendor/symfony/yaml/Tests/Fixtures/sfObjects.yml
+vendor/symfony/yaml/Tests/Fixtures/sfQuotes.yml
+vendor/symfony/yaml/Tests/Fixtures/sfTests.yml
+vendor/symfony/yaml/Tests/Fixtures/unindentedCollections.yml
+view/
+view/theme-selector/
+view/theme-selector/index.tpl.php
+
+sent 23,642,219 bytes  received 34,306 bytes  1,154,952.44 bytes/sec
+total size is 23,508,460  speedup is 0.99
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0) *. using file (0)Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.OK Asserts: 0 Faults: 0DONE to validate and publish course results.Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'Your files are now published on: http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flatRobin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me$ ^CRobin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me$ ^CRobin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me$ dbwebb publish anax-flatUploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.sending incremental file listcontent/index.mdsent 55,570 bytes  received 477 bytes  22,418.80 bytes/sectotal size is 23,508,331  speedup is 419.44sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 55,576 bytes  received 477 bytes  16,015.14 bytes/sec
+total size is 23,508,337  speedup is 419.39
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/block/footer.md
+
+sent 55,590 bytes  received 477 bytes  22,426.80 bytes/sec
+total size is 23,508,371  speedup is 419.29
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/report/110_kmom01.md
+
+sent 55,523 bytes  received 477 bytes  22,400.00 bytes/sec
+total size is 23,508,415  speedup is 419.79
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+config/navbar.php
+content/
+content/test.md
+
+sent 57,171 bytes  received 517 bytes  23,075.20 bytes/sec
+total size is 23,508,673  speedup is 407.51
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/test.md
+content/block/
+content/block/byline.md
+
+sent 55,848 bytes  received 499 bytes  22,538.80 bytes/sec
+total size is 23,508,979  speedup is 417.22
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'Your files are now published on: http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flatRobin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me$ dbwebb publish anax-flatUploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validascstotal size is 23,508,933  speedup is 419.61
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+scstsstV  PODONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 56,062 bytes  received 477 bytes  16,154.00 bytes/sec
+total size is 23,509,331  speedup is 415.81
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 56,164 bytes  received 477 bytes  16,183.14 bytes/sec
+total size is 23,509,433  speedup is 415.06
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 56,172 bytes  received 477 bytes  22,659.60 bytes/sec
+total size is 23,509,441  speedup is 415.00
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 56,171 bytes  received 477 bytes  22,659.20 bytes/sec
+total size is 23,509,441  speedup is 415.01
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  163.20 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ cd ..
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design
+$ ls
+circle.yml  example  LICENSE  Makefile  me  package.json  README.md  tutorial
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design
+$ cd ..
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser
+$ ls
+design  htmlphp  images  python
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser
+$ dbwebb publish images
+FAILED Could not find file '.dbwebb.course', this is not a valid course repo.
+This command must be executed within a valid course repo.
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser
+$ ls
+design  htmlphp  images  python
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser
+$ ls
+design  htmlphp  python
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser
+$ cd design
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design
+$ ls
+circle.yml  example  LICENSE  Makefile  me  package.json  README.md  tutorial
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design
+$ cd me
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ ls
+anax-flat  kmom01  kmom02  kmom03  kmom04  kmom05  kmom06  kmom10
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ cd anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ls
+cache          composer.lock  content  Makefile  view
+composer.json  config         htdocs   vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ cd ..
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ ls
+anax-flat  kmom01  kmom02  kmom03  kmom04  kmom05  kmom06  kmom10
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat/
+
+FAILED Not a valid combination course: 'design' and item: 'anax-flat/'.
+
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 56,205 bytes  received 477 bytes  22,672.80 bytes/sec
+total size is 23,509,474  speedup is 414.76
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 55,507 bytes  received 483 bytes  37,326.67 bytes/sec
+total size is 23,509,473  speedup is 419.89
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 55,508 bytes  received 483 bytes  37,327.33 bytes/sec
+total size is 23,509,473  speedup is 419.88
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 55,507 bytes  received 483 bytes  22,396.00 bytes/sec
+total size is 23,509,472  speedup is 419.89
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+sent 56,178 bytes  received 483 bytes  16,188.86 bytes/sec
+total size is 23,509,447  speedup is 414.91
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 56,178 bytes  received 477 bytes  37,770.00 bytes/sec
+total size is 23,509,447  speedup is 414.96
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  272.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/index.md
+
+sent 56,182 bytes  received 477 bytes  16,188.29 bytes/sec
+total size is 23,509,451  speedup is 414.93
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/.meta.md
+content/index.md
+
+sent 56,694 bytes  received 502 bytes  16,341.71 bytes/sec
+total size is 23,509,634  speedup is 411.04
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/test.md
+
+sent 55,577 bytes  received 477 bytes  22,421.60 bytes/sec
+total size is 23,509,431  speedup is 419.41
+ssent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/about.md
+
+sent 55,807 bytes  received 477 bytes  16,081.14 bytes/sec
+total size is 23,509,372  speedup is 417.69
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/about.md
+
+sent 55,801 bytes  received 477 bytes  37,518.67 bytes/sec
+total size is 23,509,366  speedup is 417.74
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ dbwebb publish anax-flat
+Uploading the directory '/cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/' to 'rowb16@ssh.student.bth.se:dbwebb-kurser/design/me/anax-flat/' to validate and publish.
+sending incremental file list
+content/about.md
+
+sent 55,779 bytes  received 477 bytes  16,073.14 bytes/sec
+total size is 23,509,344  speedup is 417.90
+sending incremental file list
+
+sent 395 bytes  received 13 bytes  816.00 bytes/sec
+total size is 11,580  speedup is 28.38
+Validating 'dbwebb-kurser/design/me/anax-flat'.
+ *. using file (0)
+ *. using file (0)
+Publishing to 'www/dbwebb-kurser/design/me/anax-flat'.
+OK Asserts: 0 Faults: 0
+DONE to validate and publish course results.
+Saved a log of the output: less -R '/home/Robin/.dbwebb-publish.log'
+Your files are now published on:
+ http://www.student.bth.se/~rowb16/dbwebb-kurser/design/me/anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ ls
+anax-flat  kmom01  kmom02  kmom03  kmom04  kmom05  kmom06  kmom10
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me
+$ cd anax-flat
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ls
+cache          composer.lock  content  Makefile  view
+composer.json  config         htdocs   vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ git init
+Initialized empty Git repository in /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat/.git/
+R$OIU         Makefile
+        composer.json
+        composer.lock
+        config/
+        content/
+        htdocs/
+        vendor/
+        view/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ cat > .gitignore
+cache
+vendor
+
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ ls
+cache          composer.lock  content  Makefile  view
+composer.json  config         htdocs   vendor
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        Makefile
+        composer.json
+        composer.lock
+        config/
+        content/
+        htdocs/
+        view/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$  git add .
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   Makefile
+        new file:   composer.json
+        new file:   composer.lock
+        new file:   config/cache.php
+        new file:   config/navbar.php
+        new file:   config/routes/custom.php
+        new file:   config/theme.php
+        new file:   config/url.php
+        new file:   content/.meta.md
+        new file:   content/about.md
+        new file:   content/block/byline.md
+        new file:   content/block/footer-col-1.md
+        new file:   content/block/footer-col-2.md
+        new file:   content/block/footer-col-3.md
+          new file:   content/cookies.md
+        new file:   content/example/markdown.md
+        new file:   content/index.md
+        new file:   content/license.md
+        new file:   content/markdown.md
+        new file:   content/report/.meta.md
+        new file:   content/report/000_index.md
+        new file:   content/report/100_intro.md
+        new file:   content/report/110_kmom01.md
+        new file:   content/report/120_kmom02.md
+        new file:   content/report/130_kmom03.md
+        new file:   content/report/140_kmom04.md
+        new file:   content/report/150_kmom05.md
+        new file:   content/report/160_kmom06.md
+        new file:   content/report/170_kmom10.md
+        new file:   content/test.md
+        new file:   htdocs/cimage/icc/sRGB_IEC61966-2-1_black_scaled.icc
+        new file:   htdocs/cimage/imgd.php
+        new file:   htdocs/css/default.min.css
+        new file:   htdocs/favicon.ico
+        new file:   htdocs/img/anax.png
+        new file:   htdocs/img/dbwebbisar.jpg
+        new file:   htdocs/img/favicon/favicon.svg
+        new file:   htdocs/img/favicon/favicon_128x128.png
+        new file:   htdocs/img/favicon/favicon_256x256.png
+        new file:   htdocs/img/favicon/favicon_40x40.png
+        new file:   htdocs/index.php
+        new file:   htdocs/js/README.md
+        new file:   view/theme-selector/index.tpl.php
+
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ git commit -m "First commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Robin@DESKTOP-4O20KL9.(none)')
+
+Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   Makefile
+        new file:   composer.json
+        new file:   composer.lock
+        new file:   config/cache.php
+        new file:   config/navbar.php
+        new file:   config/routes/custom.php
+        new file:   config/theme.php
+        new file:   config/url.php
+        new file:   content/.meta.md
+        new file:   content/about.md
+        new file:   content/block/byline.md
+        new file:   content/block/footer-col-1.md
+        new file:   content/block/footer-col-2.md
+        new file:   content/block/footer-col-3.md
+        new file:   content/block/footer.md
+        new file:   content/contact.md
+        new file:   content/cookies.md
+        new file:   content/example/markdown.md
+        new file:   content/index.md
+        new file:   content/license.md
+        new file:   content/markdown.md
+        new file:   content/report/.meta.md
+        new file:   content/report/000_index.md
+        new file:   content/report/100_intro.md
+        new file:   content/report/110_kmom01.md
+        new file:   content/report/120_kmom02.md
+        new file:   content/report/130_kmom03.md
+        new file:   content/report/140_kmom04.md
+        new file:   content/report/150_kmom05.md
+        new file:   content/report/160_kmom06.md
+        new file:   content/report/170_kmom10.md
+        new file:   content/test.md
+        new file:   htdocs/cimage/icc/sRGB_IEC61966-2-1_black_scaled.icc
+        new file:   htdocs/cimage/imgd.php
+        new file:   htdocs/css/default.min.css
+        new file:   htdocs/favicon.ico
+        new file:   htdocs/img/anax.png
+        new file:   htdocs/img/dbwebbisar.jpg
+        new file:   htdocs/img/favicon/favicon.svg
+        new file:   htdocs/img/favicon/favicon_128x128.png
+        new file:   htdocs/img/favicon/favicon_256x256.png
+    Robin@DESKTOP-4O20KL9 /cygdrive/c/Users/Robin/dbwebb-kurser/design/me/anax-flat
+$
+
+q
+  4OR4q
+q
+
